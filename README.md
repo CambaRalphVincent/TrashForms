@@ -12,7 +12,7 @@
 -  [5. Contributor](#contrib)
 
 ## <a id = "proj-overview"> 📖I. Project Overview</a> 
-<b>TrashFormed</b> is a Java-based console application aimed at promoting responsible recycling habits and sustainable waste management. The project supports two types of users:
+<b>TrashFormed</b> is a GUI-based smart recycling tracker using C# Windows Form aimed at promoting responsible recycling habits and sustainable waste management. The project supports two types of users:
 - <b>Regular Users</b>: They can register, log in, and track their recycling efforts by adding waste items categorized into types (plastic, organic, metal, glass, and electronic). Users can also view a summary of their recycling contributions and access helpful recycling tips to ensure proper disposal.
 - <b>Admins</b>: They have the ability to log in and manage recycling tips in the system, allowing them to add or delete tips tailored to each waste type.
 <br>
