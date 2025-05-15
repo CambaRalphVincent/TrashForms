@@ -81,6 +81,12 @@ C:\Users\Marielle Camba\Downloads\TrashForms-main\TrashFormsGUI\obj\Debug\net8.0
 C:\Users\Marielle Camba\Downloads\TrashForms-main\TrashFormsGUI\obj\Debug\net8.0-windows\TrashFormsGUI.RecyclingTipsForm.resources
 C:\Users\Marielle Camba\Downloads\TrashForms-main\TrashFormsGUI\obj\Debug\net8.0-windows\TrashFormsGUI.ShowTipForm.resources
 C:\Users\Marielle Camba\Downloads\TrashForms-main\TrashFormsGUI\obj\Debug\net8.0-windows\TrashFormsGUI.RecyclingSummaryForm.resources
+<<<<<<< Updated upstream
+=======
+C:\Users\Marielle Camba\Downloads\TrashForms-main\TrashFormsGUI\obj\Debug\net8.0-windows\TrashFormsGUI.AddTipForm.resources
+C:\Users\Marielle Camba\Downloads\TrashForms-main\TrashFormsGUI\obj\Debug\net8.0-windows\TrashFormsGUI.DeleteTipForm.resources
+C:\Users\Marielle Camba\Downloads\TrashForms-main\TrashFormsGUI\obj\Debug\net8.0-windows\TrashFormsGUI.ShowAllTipsForm.resources
+>>>>>>> Stashed changes
 C:\Users\GilBryan\Documents\Projects\MONEY\TrashForms\TrashFormsGUI\bin\Debug\net8.0-windows\TrashFormsGUI.exe
 C:\Users\GilBryan\Documents\Projects\MONEY\TrashForms\TrashFormsGUI\bin\Debug\net8.0-windows\TrashFormsGUI.deps.json
 C:\Users\GilBryan\Documents\Projects\MONEY\TrashForms\TrashFormsGUI\bin\Debug\net8.0-windows\TrashFormsGUI.runtimeconfig.json
@@ -103,14 +109,25 @@ C:\Users\GilBryan\Documents\Projects\MONEY\TrashForms\TrashFormsGUI\bin\Debug\ne
 C:\Users\GilBryan\Documents\Projects\MONEY\TrashForms\TrashFormsGUI\bin\Debug\net8.0-windows\runtimes\win-x64\native\krbcc64.dll
 C:\Users\GilBryan\Documents\Projects\MONEY\TrashForms\TrashFormsGUI\bin\Debug\net8.0-windows\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
 C:\Users\GilBryan\Documents\Projects\MONEY\TrashForms\TrashFormsGUI\obj\Debug\net8.0-windows\TrashFormsGUI.csproj.AssemblyReference.cache
+<<<<<<< Updated upstream
 C:\Users\GilBryan\Documents\Projects\MONEY\TrashForms\TrashFormsGUI\obj\Debug\net8.0-windows\TrashFormsGUI.AddWasteForm.resources
 C:\Users\GilBryan\Documents\Projects\MONEY\TrashForms\TrashFormsGUI\obj\Debug\net8.0-windows\TrashFormsGUI.AdminForm.resources
+=======
+C:\Users\GilBryan\Documents\Projects\MONEY\TrashForms\TrashFormsGUI\obj\Debug\net8.0-windows\TrashFormsGUI.AddTipForm.resources
+C:\Users\GilBryan\Documents\Projects\MONEY\TrashForms\TrashFormsGUI\obj\Debug\net8.0-windows\TrashFormsGUI.AddWasteForm.resources
+C:\Users\GilBryan\Documents\Projects\MONEY\TrashForms\TrashFormsGUI\obj\Debug\net8.0-windows\TrashFormsGUI.AdminForm.resources
+C:\Users\GilBryan\Documents\Projects\MONEY\TrashForms\TrashFormsGUI\obj\Debug\net8.0-windows\TrashFormsGUI.DeleteTipForm.resources
+>>>>>>> Stashed changes
 C:\Users\GilBryan\Documents\Projects\MONEY\TrashForms\TrashFormsGUI\obj\Debug\net8.0-windows\TrashFormsGUI.Form1.resources
 C:\Users\GilBryan\Documents\Projects\MONEY\TrashForms\TrashFormsGUI\obj\Debug\net8.0-windows\TrashFormsGUI.LoginForm.resources
 C:\Users\GilBryan\Documents\Projects\MONEY\TrashForms\TrashFormsGUI\obj\Debug\net8.0-windows\TrashFormsGUI.Properties.Resources.resources
 C:\Users\GilBryan\Documents\Projects\MONEY\TrashForms\TrashFormsGUI\obj\Debug\net8.0-windows\TrashFormsGUI.RecyclingSummaryForm.resources
 C:\Users\GilBryan\Documents\Projects\MONEY\TrashForms\TrashFormsGUI\obj\Debug\net8.0-windows\TrashFormsGUI.RecyclingTipsForm.resources
 C:\Users\GilBryan\Documents\Projects\MONEY\TrashForms\TrashFormsGUI\obj\Debug\net8.0-windows\TrashFormsGUI.RegisterForm.resources
+<<<<<<< Updated upstream
+=======
+C:\Users\GilBryan\Documents\Projects\MONEY\TrashForms\TrashFormsGUI\obj\Debug\net8.0-windows\TrashFormsGUI.ShowAllTipsForm.resources
+>>>>>>> Stashed changes
 C:\Users\GilBryan\Documents\Projects\MONEY\TrashForms\TrashFormsGUI\obj\Debug\net8.0-windows\TrashFormsGUI.ShowTipForm.resources
 C:\Users\GilBryan\Documents\Projects\MONEY\TrashForms\TrashFormsGUI\obj\Debug\net8.0-windows\TrashFormsGUI.UserForm.resources
 C:\Users\GilBryan\Documents\Projects\MONEY\TrashForms\TrashFormsGUI\obj\Debug\net8.0-windows\TrashFormsGUI.csproj.GenerateResource.cache
@@ -125,4 +142,7 @@ C:\Users\GilBryan\Documents\Projects\MONEY\TrashForms\TrashFormsGUI\obj\Debug\ne
 C:\Users\GilBryan\Documents\Projects\MONEY\TrashForms\TrashFormsGUI\obj\Debug\net8.0-windows\TrashFormsGUI.pdb
 C:\Users\GilBryan\Documents\Projects\MONEY\TrashForms\TrashFormsGUI\obj\Debug\net8.0-windows\TrashFormsGUI.genruntimeconfig.cache
 C:\Users\GilBryan\Documents\Projects\MONEY\TrashForms\TrashFormsGUI\obj\Debug\net8.0-windows\ref\TrashFormsGUI.dll
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes

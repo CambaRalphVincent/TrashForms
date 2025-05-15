@@ -63,9 +63,29 @@ namespace TrashFormsGUI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap primary_bg {
+            get {
+                object obj = ResourceManager.GetObject("primary_bg", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Sample_UI__1_2 {
             get {
                 object obj = ResourceManager.GetObject("Sample UI (1)2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap secondary_bg {
+            get {
+                object obj = ResourceManager.GetObject("secondary_bg", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
