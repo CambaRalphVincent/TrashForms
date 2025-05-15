@@ -23,20 +23,28 @@ namespace TrashFormsGUI
         {
             var summary = dbManager.GetRecyclingSummary(userId);
 
+            string result;
             if (summary.Count == 0)
             {
-                MessageBox.Show("No recycling data found.");
+                result = "No recycling data found.";
             }
             else
             {
-                string result = "Recycling Summary:\n";
+                var sb = new System.Text.StringBuilder();
+                sb.AppendLine("Recycling Summary:");
                 foreach (var pair in summary)
                 {
-                    result += $"{pair.Key}: {pair.Value} items recycled.\n";
+                    sb.AppendLine($"{pair.Key}: {pair.Value} items recycled.");
                 }
-                MessageBox.Show(result);
+                result = sb.ToString();
+            }
+
+            using (var summaryForm = new RecyclingSummaryForm(result))
+            {
+                summaryForm.ShowDialog(this);
             }
         }
+
 
         private void btnRecSummary_Click(object sender, EventArgs e)
         {
@@ -45,8 +53,34 @@ namespace TrashFormsGUI
 
         private void btnAddWaste_Click(object sender, EventArgs e)
         {
-            AddWasteForm addWasteForm = new AddWasteForm(currentUser.UserId, dbManager);
-            addWasteForm.ShowDialog();
+            using (var addWasteForm = new AddWasteForm(currentUser.UserId, dbManager))
+            {
+                addWasteForm.ShowDialog(this);
+            }
+        }
+
+        private void UserForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnRecTips_Click(object sender, EventArgs e)
+        {
+            using (var tipsForm = new RecyclingTipsForm(dbManager))
+            {
+                tipsForm.ShowDialog(this);
+            }
+        }
+
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            // Your logic here
+        }
+
+        private void UserForm_Load_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

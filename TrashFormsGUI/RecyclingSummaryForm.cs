@@ -10,19 +10,17 @@ using System.Windows.Forms;
 
 namespace TrashFormsGUI
 {
-    public partial class AdminForm : Form
+    public partial class RecyclingSummaryForm : Form
     {
-        private User currentUser;
-
-        public AdminForm(User user, DatabaseManager dbManager)
+        public RecyclingSummaryForm(string summary)
         {
             InitializeComponent();
-            currentUser = user;
+            txtSummary.Text = summary;
         }
 
-        private void AdminForm_Load(object sender, EventArgs e)
+        private void btnOk_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
     }
 }

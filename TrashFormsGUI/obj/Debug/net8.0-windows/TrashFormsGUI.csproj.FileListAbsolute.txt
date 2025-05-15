@@ -36,3 +36,46 @@ D:\TrashFormsGUI\TrashFormsGUI\obj\Debug\net8.0-windows\TrashFormsGUI.AdminForm.
 D:\TrashFormsGUI\TrashFormsGUI\obj\Debug\net8.0-windows\TrashFormsGUI.Properties.Resources.resources
 D:\TrashFormsGUI\TrashFormsGUI\obj\Debug\net8.0-windows\TrashFormsGUI.UserForm.resources
 D:\TrashFormsGUI\TrashFormsGUI\obj\Debug\net8.0-windows\TrashFormsGUI.AddWasteForm.resources
+C:\Users\Marielle Camba\Downloads\TrashForms-main\TrashFormsGUI\bin\Debug\net8.0-windows\TrashFormsGUI.exe
+C:\Users\Marielle Camba\Downloads\TrashForms-main\TrashFormsGUI\bin\Debug\net8.0-windows\TrashFormsGUI.deps.json
+C:\Users\Marielle Camba\Downloads\TrashForms-main\TrashFormsGUI\bin\Debug\net8.0-windows\TrashFormsGUI.runtimeconfig.json
+C:\Users\Marielle Camba\Downloads\TrashForms-main\TrashFormsGUI\bin\Debug\net8.0-windows\TrashFormsGUI.dll
+C:\Users\Marielle Camba\Downloads\TrashForms-main\TrashFormsGUI\bin\Debug\net8.0-windows\TrashFormsGUI.pdb
+C:\Users\Marielle Camba\Downloads\TrashForms-main\TrashFormsGUI\bin\Debug\net8.0-windows\BouncyCastle.Cryptography.dll
+C:\Users\Marielle Camba\Downloads\TrashForms-main\TrashFormsGUI\bin\Debug\net8.0-windows\Google.Protobuf.dll
+C:\Users\Marielle Camba\Downloads\TrashForms-main\TrashFormsGUI\bin\Debug\net8.0-windows\K4os.Compression.LZ4.dll
+C:\Users\Marielle Camba\Downloads\TrashForms-main\TrashFormsGUI\bin\Debug\net8.0-windows\K4os.Compression.LZ4.Streams.dll
+C:\Users\Marielle Camba\Downloads\TrashForms-main\TrashFormsGUI\bin\Debug\net8.0-windows\K4os.Hash.xxHash.dll
+C:\Users\Marielle Camba\Downloads\TrashForms-main\TrashFormsGUI\bin\Debug\net8.0-windows\MySql.Data.dll
+C:\Users\Marielle Camba\Downloads\TrashForms-main\TrashFormsGUI\bin\Debug\net8.0-windows\System.IO.Pipelines.dll
+C:\Users\Marielle Camba\Downloads\TrashForms-main\TrashFormsGUI\bin\Debug\net8.0-windows\System.Text.Encodings.Web.dll
+C:\Users\Marielle Camba\Downloads\TrashForms-main\TrashFormsGUI\bin\Debug\net8.0-windows\System.Text.Json.dll
+C:\Users\Marielle Camba\Downloads\TrashForms-main\TrashFormsGUI\bin\Debug\net8.0-windows\ZstdSharp.dll
+C:\Users\Marielle Camba\Downloads\TrashForms-main\TrashFormsGUI\bin\Debug\net8.0-windows\runtimes\win-x64\native\comerr64.dll
+C:\Users\Marielle Camba\Downloads\TrashForms-main\TrashFormsGUI\bin\Debug\net8.0-windows\runtimes\win-x64\native\gssapi64.dll
+C:\Users\Marielle Camba\Downloads\TrashForms-main\TrashFormsGUI\bin\Debug\net8.0-windows\runtimes\win-x64\native\k5sprt64.dll
+C:\Users\Marielle Camba\Downloads\TrashForms-main\TrashFormsGUI\bin\Debug\net8.0-windows\runtimes\win-x64\native\krb5_64.dll
+C:\Users\Marielle Camba\Downloads\TrashForms-main\TrashFormsGUI\bin\Debug\net8.0-windows\runtimes\win-x64\native\krbcc64.dll
+C:\Users\Marielle Camba\Downloads\TrashForms-main\TrashFormsGUI\bin\Debug\net8.0-windows\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+C:\Users\Marielle Camba\Downloads\TrashForms-main\TrashFormsGUI\obj\Debug\net8.0-windows\TrashFormsGUI.csproj.AssemblyReference.cache
+C:\Users\Marielle Camba\Downloads\TrashForms-main\TrashFormsGUI\obj\Debug\net8.0-windows\TrashFormsGUI.AddWasteForm.resources
+C:\Users\Marielle Camba\Downloads\TrashForms-main\TrashFormsGUI\obj\Debug\net8.0-windows\TrashFormsGUI.AdminForm.resources
+C:\Users\Marielle Camba\Downloads\TrashForms-main\TrashFormsGUI\obj\Debug\net8.0-windows\TrashFormsGUI.Form1.resources
+C:\Users\Marielle Camba\Downloads\TrashForms-main\TrashFormsGUI\obj\Debug\net8.0-windows\TrashFormsGUI.Properties.Resources.resources
+C:\Users\Marielle Camba\Downloads\TrashForms-main\TrashFormsGUI\obj\Debug\net8.0-windows\TrashFormsGUI.UserForm.resources
+C:\Users\Marielle Camba\Downloads\TrashForms-main\TrashFormsGUI\obj\Debug\net8.0-windows\TrashFormsGUI.csproj.GenerateResource.cache
+C:\Users\Marielle Camba\Downloads\TrashForms-main\TrashFormsGUI\obj\Debug\net8.0-windows\TrashFormsGUI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Marielle Camba\Downloads\TrashForms-main\TrashFormsGUI\obj\Debug\net8.0-windows\TrashFormsGUI.AssemblyInfoInputs.cache
+C:\Users\Marielle Camba\Downloads\TrashForms-main\TrashFormsGUI\obj\Debug\net8.0-windows\TrashFormsGUI.AssemblyInfo.cs
+C:\Users\Marielle Camba\Downloads\TrashForms-main\TrashFormsGUI\obj\Debug\net8.0-windows\TrashFormsGUI.csproj.CoreCompileInputs.cache
+C:\Users\Marielle Camba\Downloads\TrashForms-main\TrashFormsGUI\obj\Debug\net8.0-windows\TrashFor.92119C1A.Up2Date
+C:\Users\Marielle Camba\Downloads\TrashForms-main\TrashFormsGUI\obj\Debug\net8.0-windows\TrashFormsGUI.dll
+C:\Users\Marielle Camba\Downloads\TrashForms-main\TrashFormsGUI\obj\Debug\net8.0-windows\refint\TrashFormsGUI.dll
+C:\Users\Marielle Camba\Downloads\TrashForms-main\TrashFormsGUI\obj\Debug\net8.0-windows\TrashFormsGUI.pdb
+C:\Users\Marielle Camba\Downloads\TrashForms-main\TrashFormsGUI\obj\Debug\net8.0-windows\TrashFormsGUI.genruntimeconfig.cache
+C:\Users\Marielle Camba\Downloads\TrashForms-main\TrashFormsGUI\obj\Debug\net8.0-windows\ref\TrashFormsGUI.dll
+C:\Users\Marielle Camba\Downloads\TrashForms-main\TrashFormsGUI\obj\Debug\net8.0-windows\TrashFormsGUI.LoginForm.resources
+C:\Users\Marielle Camba\Downloads\TrashForms-main\TrashFormsGUI\obj\Debug\net8.0-windows\TrashFormsGUI.RegisterForm.resources
+C:\Users\Marielle Camba\Downloads\TrashForms-main\TrashFormsGUI\obj\Debug\net8.0-windows\TrashFormsGUI.RecyclingTipsForm.resources
+C:\Users\Marielle Camba\Downloads\TrashForms-main\TrashFormsGUI\obj\Debug\net8.0-windows\TrashFormsGUI.ShowTipForm.resources
+C:\Users\Marielle Camba\Downloads\TrashForms-main\TrashFormsGUI\obj\Debug\net8.0-windows\TrashFormsGUI.RecyclingSummaryForm.resources

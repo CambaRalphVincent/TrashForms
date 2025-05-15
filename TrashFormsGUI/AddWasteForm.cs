@@ -42,7 +42,16 @@ namespace TrashFormsGUI
 
             if (success)
             {
-                MessageBox.Show("Waste item added successfully!");
+                if (wasteType == "Plastic")
+                {
+                    // itemId is not known here, so use 0 or -1 as placeholder
+                    var plasticWaste = new PlasticWaste(0, userId, itemName, quantity);
+                    MessageBox.Show("Waste item added successfully!\n\n" + plasticWaste.GetRecycleTip(), "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Waste item added successfully!");
+                }
                 this.Close();
             }
             else
@@ -50,6 +59,7 @@ namespace TrashFormsGUI
                 MessageBox.Show("Failed to add waste item.");
             }
         }
+
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
@@ -78,18 +88,40 @@ namespace TrashFormsGUI
 
             if (success)
             {
-                MessageBox.Show("Waste item added successfully!");
-                this.Close(); // Return to UserForm
+                string tip = "";
+                if (wasteType == "Plastic")
+                {
+                    var plasticWaste = new PlasticWaste(0, userId, itemName, quantity);
+                    tip = plasticWaste.GetRecycleTip();
+                }
+                else
+                {
+                    // You can add similar logic for other waste types if you have classes for them,
+                    // or use dbManager.GetTipByWasteType(wasteType) as a fallback:
+                    tip = dbManager.GetTipByWasteType(wasteType);
+                }
+
+                using (var tipForm = new ShowTipForm(tip, wasteType))
+                {
+                    tipForm.ShowDialog(this);
+                }
+                this.Close();
             }
             else
             {
-                MessageBox.Show("Failed to add waste item. Please try again.");
+                MessageBox.Show("Failed to add waste item.");
             }
         }
+
 
         private void btnCancel_Click_1(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void AddWasteForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

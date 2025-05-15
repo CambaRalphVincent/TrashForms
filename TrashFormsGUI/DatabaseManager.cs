@@ -64,27 +64,27 @@ namespace TrashFormsGUI
         public void CreateTables()
         {
             string userTable = @"CREATE TABLE IF NOT EXISTS Users (
-                            user_id INT AUTO_INCREMENT PRIMARY KEY,
-                            username VARCHAR(50) UNIQUE NOT NULL,
-                            user_password VARCHAR(50) NOT NULL,
-                            user_role VARCHAR(10) NOT NULL
-                         );";
+                                   user_id INT AUTO_INCREMENT PRIMARY KEY,
+                                   username VARCHAR(50) UNIQUE NOT NULL,
+                                   user_password VARCHAR(50) NOT NULL,
+                                   user_role VARCHAR(10) NOT NULL
+                                );";
 
             string wasteTable = @"CREATE TABLE IF NOT EXISTS WasteItems (
-                            item_id INT AUTO_INCREMENT PRIMARY KEY,
-                            username VARCHAR(100) NOT NULL,
-                            item_name VARCHAR(100) NOT NULL,
-                            quantity INT NOT NULL,
-                            waste_type VARCHAR(50) NOT NULL,
-                            INDEX(waste_type),
-                            FOREIGN KEY(username) REFERENCES Users(username) ON DELETE CASCADE
-                        );";
+                                   item_id INT AUTO_INCREMENT PRIMARY KEY,
+                                   user_id INT NOT NULL,
+                                   item_name VARCHAR(100) NOT NULL,
+                                   quantity INT NOT NULL,
+                                   waste_type VARCHAR(50) NOT NULL,
+                                   INDEX(waste_type),
+                                   FOREIGN KEY(user_id) REFERENCES Users(user_id) ON DELETE CASCADE
+                               );";
 
             string tipsTable = @"CREATE TABLE IF NOT EXISTS RecyclingTips (
-                            tip_id INT AUTO_INCREMENT PRIMARY KEY,
-                            waste_type VARCHAR(50) NOT NULL UNIQUE,
-                            tip TEXT NOT NULL
-                        );";
+                                   tip_id INT AUTO_INCREMENT PRIMARY KEY,
+                                   waste_type VARCHAR(50) NOT NULL UNIQUE,
+                                   tip TEXT NOT NULL
+                               );";
 
             try
             {
@@ -232,10 +232,11 @@ namespace TrashFormsGUI
                         {
                             if (reader.Read())
                             {
+                                int userId = Convert.ToInt32(reader["user_id"]);
                                 string uname = reader["username"].ToString();
                                 string pwd = reader["user_password"].ToString();
                                 string role = reader["user_role"].ToString();
-                                return new User(uname, pwd, role);
+                                return new User(userId, uname, pwd, role);
                             }
                         }
                     }
@@ -248,6 +249,7 @@ namespace TrashFormsGUI
 
             return null;
         }
+
 
 
         public bool InsertWasteItem(int userId, string itemName, int quantity, string wasteType)

@@ -10,86 +10,71 @@ namespace TrashFormsGUI
         public Form1()
         {
             InitializeComponent();
-            dbManager = new DatabaseManager("localhost", "root", "23-01893", "trashforms_db");
+            dbManager = new DatabaseManager("localhost", "root", "PleaseDontForget***", "trashforms_db");
             dbManager.CreateTables();
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            // Optional: initialization logic
-        }
-
-        private void lblPassword_Click(object sender, EventArgs e)
-        {
-            // Optional: label click logic
-        }
-
-        private void btnLogin_Click(object sender, EventArgs e)
-        {
-            string username = txtUsername.Text.Trim();
-            string password = txtPassword.Text.Trim();
-
-            if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
-            {
-                MessageBox.Show("Please enter both username and password.");
-                return;
-            }
-
-            User user = dbManager.GetUserByUsername(username);
-
-            if (user != null && user.Password == password)
-            {
-                MessageBox.Show($"Login as {user.Role} successful!");
-
-                if (user.Role.ToLower() == "user")
-                {
-                    UserForm userForm = new UserForm(user, dbManager);
-                    userForm.Show();
-                    this.Hide();
-                }
-                else if (user.Role.ToLower() == "admin")
-                {
-                    AdminForm adminForm = new AdminForm(user, dbManager);
-                    adminForm.Show();
-                    this.Hide();
-                }
-            }
-            else
-            {
-                MessageBox.Show("Invalid username or password.");
-            }
         }
 
         private void btnRegister_Click(object sender, EventArgs e)
         {
-            string username = txtUsername.Text.Trim();
-            string password = txtPassword.Text.Trim();
-            string role = comboBoxRole.SelectedItem.ToString().ToLower(); // "user" or "admin"
+            this.Hide(); // Hide the main menu
 
-            if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
+            using (var registerForm = new RegisterForm(dbManager))
             {
-                MessageBox.Show("Please enter both username and password.");
-                return;
+                registerForm.ShowDialog();
             }
 
-            User newUser = new User(username, password, role);
-
-            if (dbManager.InsertUser(newUser))
-            {
-                MessageBox.Show("Registration successful!");
-                txtUsername.Clear();
-                txtPassword.Clear();
-                comboBoxRole.SelectedIndex = 0;
-            }
-            else
-            {
-                MessageBox.Show("Username already exists or error occurred.");
-            }
+            this.Show(); // Show the main menu again after registration form closes
         }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            this.Hide(); // Hide the main menu
+
+            using (var loginForm = new LoginForm(dbManager))
+            {
+                if (loginForm.ShowDialog() == DialogResult.OK)
+                {
+                    User user = loginForm.LoggedInUser;
+                    if (user.Role.ToLower() == "user")
+                    {
+                        using (var userForm = new UserForm(user, dbManager))
+                        {
+                            userForm.ShowDialog();
+                        }
+                    }
+                    else if (user.Role.ToLower() == "admin")
+                    {
+                        using (var adminForm = new AdminForm(user, dbManager))
+                        {
+                            adminForm.ShowDialog();
+                        }
+                    }
+                }
+            }
+
+            this.Show(); // Show the main menu again after login window or user/admin form closes
+        }
+
+
 
         private void btnExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

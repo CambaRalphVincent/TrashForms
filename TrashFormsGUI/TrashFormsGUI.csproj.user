@@ -10,6 +10,21 @@
     <Compile Update="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="RecyclingSummaryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="RecyclingTipsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="RegisterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ShowTipForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="UserForm.cs">
       <SubType>Form</SubType>
     </Compile>
