@@ -1609,19 +1609,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Crisostomo\\.nuget\\packages\\": {}
+    "C:\\Users\\GilBryan\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\TrashFormsGUI\\TrashFormsGUI\\TrashFormsGUI.csproj",
+      "projectUniqueName": "C:\\Users\\GilBryan\\Documents\\Projects\\MONEY\\TrashForms\\TrashFormsGUI\\TrashFormsGUI.csproj",
       "projectName": "TrashFormsGUI",
-      "projectPath": "D:\\TrashFormsGUI\\TrashFormsGUI\\TrashFormsGUI.csproj",
-      "packagesPath": "C:\\Users\\Crisostomo\\.nuget\\packages\\",
-      "outputPath": "D:\\TrashFormsGUI\\TrashFormsGUI\\obj\\",
+      "projectPath": "C:\\Users\\GilBryan\\Documents\\Projects\\MONEY\\TrashForms\\TrashFormsGUI\\TrashFormsGUI.csproj",
+      "packagesPath": "C:\\Users\\GilBryan\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\GilBryan\\Documents\\Projects\\MONEY\\TrashForms\\TrashFormsGUI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Crisostomo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\GilBryan\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1676,7 +1676,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

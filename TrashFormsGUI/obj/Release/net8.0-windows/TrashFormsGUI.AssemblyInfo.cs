@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TrashFormsGUI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+69d80c4d131b8cb546945e7032321f28cc5ef7ea")]
 [assembly: System.Reflection.AssemblyProductAttribute("TrashFormsGUI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TrashFormsGUI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
