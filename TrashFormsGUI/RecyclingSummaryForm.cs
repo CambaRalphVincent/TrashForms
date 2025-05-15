@@ -22,5 +22,10 @@ namespace TrashFormsGUI
         {
             this.Close();
         }
+
+        private void RecyclingSummaryForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

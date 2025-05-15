@@ -21,7 +21,7 @@ namespace TrashFormsGUI
             this.userId = userId;
             this.dbManager = dbManager;
 
-            cmbWasteType.Items.AddRange(new object[] { "Plastic", "Glass", "Metal", "Organic", "Paper" });
+            cmbWasteType.Items.AddRange(new object[] { "Plastic", "Glass", "Metal", "Organic", "Electronic" });
             cmbWasteType.SelectedIndex = 0;
             numQuantity.Value = 1;
         }
@@ -42,22 +42,36 @@ namespace TrashFormsGUI
 
             if (success)
             {
-                if (wasteType == "Plastic")
+                string tip = "";
+                switch (wasteType)
                 {
-                    // itemId is not known here, so use 0 or -1 as placeholder
-                    var plasticWaste = new PlasticWaste(0, userId, itemName, quantity);
-                    MessageBox.Show("Waste item added successfully!\n\n" + plasticWaste.GetRecycleTip(), "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    case "Plastic":
+                        tip = new PlasticWaste(0, userId, itemName, quantity).GetRecycleTip();
+                        break;
+                    case "Glass":
+                        tip = new GlassWaste(0, userId, itemName, quantity).GetRecycleTip();
+                        break;
+                    case "Metal":
+                        tip = new MetalWaste(0, userId, itemName, quantity).GetRecycleTip();
+                        break;
+                    case "Organic":
+                        tip = new OrganicWaste(0, userId, itemName, quantity).GetRecycleTip();
+                        break;
+                    case "Electronic":
+                        tip = new ElectronicWaste(0, userId, itemName, quantity).GetRecycleTip();
+                        break;
+                    default:
+                        tip = dbManager.GetTipByWasteType(wasteType);
+                        break;
                 }
-                else
+
+                using (var tipForm = new ShowTipForm(tip, wasteType))
                 {
-                    MessageBox.Show("Waste item added successfully!");
+                    tipForm.ShowDialog(this);
                 }
                 this.Close();
             }
-            else
-            {
-                MessageBox.Show("Failed to add waste item.");
-            }
+
         }
 
 
@@ -89,16 +103,27 @@ namespace TrashFormsGUI
             if (success)
             {
                 string tip = "";
-                if (wasteType == "Plastic")
+                // Show the tip from the corresponding waste class
+                switch (wasteType)
                 {
-                    var plasticWaste = new PlasticWaste(0, userId, itemName, quantity);
-                    tip = plasticWaste.GetRecycleTip();
-                }
-                else
-                {
-                    // You can add similar logic for other waste types if you have classes for them,
-                    // or use dbManager.GetTipByWasteType(wasteType) as a fallback:
-                    tip = dbManager.GetTipByWasteType(wasteType);
+                    case "Plastic":
+                        tip = new PlasticWaste(0, userId, itemName, quantity).GetRecycleTip();
+                        break;
+                    case "Glass":
+                        tip = new GlassWaste(0, userId, itemName, quantity).GetRecycleTip();
+                        break;
+                    case "Metal":
+                        tip = new MetalWaste(0, userId, itemName, quantity).GetRecycleTip();
+                        break;
+                    case "Organic":
+                        tip = new OrganicWaste(0, userId, itemName, quantity).GetRecycleTip();
+                        break;
+                    case "Electronic":
+                        tip = new ElectronicWaste(0, userId, itemName, quantity).GetRecycleTip();
+                        break;
+                    default:
+                        tip = dbManager.GetTipByWasteType(wasteType);
+                        break;
                 }
 
                 using (var tipForm = new ShowTipForm(tip, wasteType))

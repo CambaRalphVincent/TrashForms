@@ -10,50 +10,42 @@ using System.Windows.Forms;
 
 namespace TrashFormsGUI
 {
-    public partial class RecyclingTipsForm : Form
+    public partial class AddTipForm : Form
     {
         private readonly DatabaseManager dbManager;
 
-        public RecyclingTipsForm(DatabaseManager dbManager)
+        public AddTipForm(DatabaseManager dbManager)
         {
             InitializeComponent();
             this.dbManager = dbManager;
         }
 
-        private void RecyclingTipsForm_Load(object sender, EventArgs e)
+        private void AddTipForm_Load(object sender, EventArgs e)
         {
-            // Populate waste types
             cmbWasteType.Items.AddRange(new object[] { "Plastic", "Glass", "Metal", "Organic", "Electronic" });
             cmbWasteType.SelectedIndex = 0;
-            txtTips.Clear();
+            txtTip.Clear();
         }
 
-        private void btnShowTips_Click(object sender, EventArgs e)
+        private void btnAdd_Click(object sender, EventArgs e)
         {
             string wasteType = cmbWasteType.SelectedItem?.ToString();
-            if (string.IsNullOrEmpty(wasteType))
+            string tip = txtTip.Text.Trim();
+
+            if (string.IsNullOrEmpty(wasteType) || string.IsNullOrEmpty(tip))
             {
-                MessageBox.Show("Please select a waste type.");
+                MessageBox.Show("Please select a waste type and enter a tip.");
                 return;
             }
 
-            string tips = dbManager.GetTipByWasteType(wasteType);
-            txtTips.Text = tips;
+            dbManager.InsertOrUpdateTip(wasteType, tip);
+            MessageBox.Show("Recycling tip added successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            this.Close();
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-
-        private void txtTips_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblTitle_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

@@ -79,3 +79,5 @@ C:\Users\Marielle Camba\Downloads\TrashForms-main\TrashFormsGUI\obj\Debug\net8.0
 C:\Users\Marielle Camba\Downloads\TrashForms-main\TrashFormsGUI\obj\Debug\net8.0-windows\TrashFormsGUI.RecyclingTipsForm.resources
 C:\Users\Marielle Camba\Downloads\TrashForms-main\TrashFormsGUI\obj\Debug\net8.0-windows\TrashFormsGUI.ShowTipForm.resources
 C:\Users\Marielle Camba\Downloads\TrashForms-main\TrashFormsGUI\obj\Debug\net8.0-windows\TrashFormsGUI.RecyclingSummaryForm.resources
+C:\Users\Marielle Camba\Downloads\TrashForms-main\TrashFormsGUI\obj\Debug\net8.0-windows\TrashFormsGUI.AddTipForm.resources
+C:\Users\Marielle Camba\Downloads\TrashForms-main\TrashFormsGUI\obj\Debug\net8.0-windows\TrashFormsGUI.DeleteTipForm.resources

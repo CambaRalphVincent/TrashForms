@@ -75,7 +75,7 @@ namespace TrashFormsGUI
 
         private void btnLogout_Click(object sender, EventArgs e)
         {
-            // Your logic here
+            this.Close();
         }
 
         private void UserForm_Load_1(object sender, EventArgs e)
