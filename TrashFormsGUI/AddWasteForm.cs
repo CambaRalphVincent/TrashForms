@@ -107,5 +107,10 @@ namespace TrashFormsGUI
         {
 
         }
+
+        private void lblQuantity_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

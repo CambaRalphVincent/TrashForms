@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Marielle Camba\\Downloads\\TrashForms-main\\TrashFormsGUI\\TrashFormsGUI.csproj": {}
+    "C:\\Users\\GilBryan\\Documents\\Projects\\MONEY\\TrashForms\\TrashFormsGUI\\TrashFormsGUI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Marielle Camba\\Downloads\\TrashForms-main\\TrashFormsGUI\\TrashFormsGUI.csproj": {
+    "C:\\Users\\GilBryan\\Documents\\Projects\\MONEY\\TrashForms\\TrashFormsGUI\\TrashFormsGUI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Marielle Camba\\Downloads\\TrashForms-main\\TrashFormsGUI\\TrashFormsGUI.csproj",
+        "projectUniqueName": "C:\\Users\\GilBryan\\Documents\\Projects\\MONEY\\TrashForms\\TrashFormsGUI\\TrashFormsGUI.csproj",
         "projectName": "TrashFormsGUI",
-        "projectPath": "C:\\Users\\Marielle Camba\\Downloads\\TrashForms-main\\TrashFormsGUI\\TrashFormsGUI.csproj",
-        "packagesPath": "C:\\Users\\Marielle Camba\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Marielle Camba\\Downloads\\TrashForms-main\\TrashFormsGUI\\obj\\",
+        "projectPath": "C:\\Users\\GilBryan\\Documents\\Projects\\MONEY\\TrashForms\\TrashFormsGUI\\TrashFormsGUI.csproj",
+        "packagesPath": "C:\\Users\\GilBryan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\GilBryan\\Documents\\Projects\\MONEY\\TrashForms\\TrashFormsGUI\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Marielle Camba\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\GilBryan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -43,8 +39,7 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.100"
+        }
       },
       "frameworks": {
         "net8.0-windows7.0": {
@@ -74,7 +69,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

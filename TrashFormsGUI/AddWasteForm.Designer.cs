@@ -43,11 +43,11 @@
             // 
             // pictureBox1
             // 
+            pictureBox1.BackColor = Color.Transparent;
             pictureBox1.Image = Properties.Resources.Sample_UI__1_2;
-            pictureBox1.Location = new Point(97, 51);
-            pictureBox1.Margin = new Padding(3, 4, 3, 4);
+            pictureBox1.Location = new Point(85, 38);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(713, 155);
+            pictureBox1.Size = new Size(624, 116);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
@@ -55,93 +55,99 @@
             // lblItemName
             // 
             lblItemName.AutoSize = true;
-            lblItemName.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold);
-            lblItemName.Location = new Point(318, 248);
+            lblItemName.BackColor = Color.Transparent;
+            lblItemName.Font = new Font("Montserrat", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblItemName.Location = new Point(271, 187);
             lblItemName.Name = "lblItemName";
-            lblItemName.Size = new Size(150, 28);
+            lblItemName.Size = new Size(127, 26);
             lblItemName.TabIndex = 1;
             lblItemName.Text = "Item Name:";
             // 
             // lblQuantity
             // 
             lblQuantity.AutoSize = true;
-            lblQuantity.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold);
-            lblQuantity.Location = new Point(318, 295);
+            lblQuantity.BackColor = Color.Transparent;
+            lblQuantity.Font = new Font("Montserrat", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblQuantity.Location = new Point(271, 222);
             lblQuantity.Name = "lblQuantity";
-            lblQuantity.Size = new Size(117, 28);
+            lblQuantity.Size = new Size(104, 26);
             lblQuantity.TabIndex = 2;
             lblQuantity.Text = "Quantity:";
+            lblQuantity.Click += lblQuantity_Click;
             // 
             // lblWasteType
             // 
             lblWasteType.AutoSize = true;
-            lblWasteType.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold);
-            lblWasteType.Location = new Point(318, 343);
+            lblWasteType.BackColor = Color.Transparent;
+            lblWasteType.Font = new Font("Montserrat", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblWasteType.Location = new Point(271, 255);
             lblWasteType.Name = "lblWasteType";
-            lblWasteType.Size = new Size(152, 28);
+            lblWasteType.Size = new Size(132, 26);
             lblWasteType.TabIndex = 3;
             lblWasteType.Text = "Waste Type:";
             // 
             // txtItemName
             // 
-            txtItemName.Font = new Font("Century Gothic", 12F, FontStyle.Bold);
-            txtItemName.Location = new Point(462, 248);
-            txtItemName.Margin = new Padding(3, 4, 3, 4);
+            txtItemName.Font = new Font("Montserrat", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            txtItemName.Location = new Point(404, 186);
             txtItemName.Name = "txtItemName";
-            txtItemName.Size = new Size(137, 32);
+            txtItemName.Size = new Size(120, 27);
             txtItemName.TabIndex = 4;
             // 
             // numQuantity
             // 
-            numQuantity.Font = new Font("Century Gothic", 12F, FontStyle.Bold);
-            numQuantity.Location = new Point(462, 296);
-            numQuantity.Margin = new Padding(3, 4, 3, 4);
+            numQuantity.Font = new Font("Montserrat", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            numQuantity.Location = new Point(404, 222);
+            numQuantity.Margin = new Padding(3, 2, 3, 2);
             numQuantity.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
             numQuantity.Name = "numQuantity";
-            numQuantity.Size = new Size(137, 32);
+            numQuantity.Size = new Size(120, 27);
             numQuantity.TabIndex = 5;
             numQuantity.Value = new decimal(new int[] { 1, 0, 0, 0 });
             // 
             // cmbWasteType
             // 
             cmbWasteType.DropDownStyle = ComboBoxStyle.DropDownList;
-            cmbWasteType.Font = new Font("Century Gothic", 12F, FontStyle.Bold);
+            cmbWasteType.Font = new Font("Montserrat", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             cmbWasteType.FormattingEnabled = true;
-            cmbWasteType.Location = new Point(462, 343);
-            cmbWasteType.Margin = new Padding(3, 4, 3, 4);
+            cmbWasteType.Location = new Point(404, 257);
             cmbWasteType.Name = "cmbWasteType";
-            cmbWasteType.Size = new Size(138, 31);
+            cmbWasteType.Size = new Size(121, 30);
             cmbWasteType.TabIndex = 6;
             // 
             // btnSubmit
             // 
-            btnSubmit.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold);
-            btnSubmit.Location = new Point(393, 404);
-            btnSubmit.Margin = new Padding(3, 4, 3, 4);
+            btnSubmit.BackColor = Color.FromArgb(32, 93, 28);
+            btnSubmit.Font = new Font("Montserrat", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnSubmit.ForeColor = Color.White;
+            btnSubmit.Location = new Point(344, 303);
             btnSubmit.Name = "btnSubmit";
-            btnSubmit.Size = new Size(133, 48);
+            btnSubmit.Size = new Size(116, 36);
             btnSubmit.TabIndex = 7;
             btnSubmit.Text = "Submit";
-            btnSubmit.UseVisualStyleBackColor = true;
+            btnSubmit.UseVisualStyleBackColor = false;
             btnSubmit.Click += btnSubmit_Click_1;
             // 
             // btnCancel
             // 
-            btnCancel.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold);
-            btnCancel.Location = new Point(394, 460);
-            btnCancel.Margin = new Padding(3, 4, 3, 4);
+            btnCancel.BackColor = Color.FromArgb(32, 93, 28);
+            btnCancel.Font = new Font("Montserrat", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnCancel.ForeColor = Color.White;
+            btnCancel.Location = new Point(345, 345);
             btnCancel.Name = "btnCancel";
-            btnCancel.Size = new Size(131, 49);
+            btnCancel.Size = new Size(115, 37);
             btnCancel.TabIndex = 8;
             btnCancel.Text = "Cancel";
-            btnCancel.UseVisualStyleBackColor = true;
+            btnCancel.UseVisualStyleBackColor = false;
             btnCancel.Click += btnCancel_Click_1;
             // 
             // AddWasteForm
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(914, 600);
+            BackgroundImage = Properties.Resources.bg2;
+            BackgroundImageLayout = ImageLayout.Stretch;
+            ClientSize = new Size(800, 450);
             Controls.Add(btnCancel);
             Controls.Add(btnSubmit);
             Controls.Add(cmbWasteType);
@@ -151,7 +157,6 @@
             Controls.Add(lblQuantity);
             Controls.Add(lblItemName);
             Controls.Add(pictureBox1);
-            Margin = new Padding(3, 4, 3, 4);
             Name = "AddWasteForm";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "AddWasteForm";
