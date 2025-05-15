@@ -3,6 +3,7 @@
     "",
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     "\\TrashFormsGUI"
   ],
   "SelectedNode": "\\TrashFormsGUI\\TrashFormsGUI.sln",
@@ -14,6 +15,11 @@
     "\\TrashFormsGUI\\Services"
   ],
   "SelectedNode": "\\TrashFormsGUI\\Program.cs",
+>>>>>>> Stashed changes
+=======
+    "\\TrashFormsGUI"
+  ],
+  "SelectedNode": "\\TrashFormsGUI\\TrashFormsGUI.sln",
 >>>>>>> Stashed changes
 =======
     "\\TrashFormsGUI"

@@ -67,6 +67,7 @@
             btnAddWaste.BackColor = Color.FromArgb(32, 93, 28);
             btnAddWaste.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold);
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
             btnAddWaste.Location = new Point(273, 203);
             btnAddWaste.Name = "btnAddWaste";
             btnAddWaste.Size = new Size(243, 38);
@@ -75,6 +76,11 @@
             btnAddWaste.ForeColor = Color.White;
             btnAddWaste.Location = new Point(273, 188);
             btnAddWaste.Name = "btnAddWaste";
+=======
+            btnAddWaste.ForeColor = Color.White;
+            btnAddWaste.Location = new Point(273, 188);
+            btnAddWaste.Name = "btnAddWaste";
+>>>>>>> Stashed changes
             btnAddWaste.Size = new Size(243, 34);
             btnAddWaste.TabIndex = 2;
 >>>>>>> Stashed changes
@@ -87,6 +93,7 @@
             btnRecSummary.BackColor = Color.FromArgb(32, 93, 28);
             btnRecSummary.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold);
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
             btnRecSummary.Location = new Point(273, 251);
             btnRecSummary.Name = "btnRecSummary";
             btnRecSummary.Size = new Size(243, 38);
@@ -95,6 +102,11 @@
             btnRecSummary.ForeColor = Color.White;
             btnRecSummary.Location = new Point(273, 229);
             btnRecSummary.Name = "btnRecSummary";
+=======
+            btnRecSummary.ForeColor = Color.White;
+            btnRecSummary.Location = new Point(273, 229);
+            btnRecSummary.Name = "btnRecSummary";
+>>>>>>> Stashed changes
             btnRecSummary.Size = new Size(243, 34);
             btnRecSummary.TabIndex = 3;
 >>>>>>> Stashed changes
@@ -106,6 +118,7 @@
             // 
             btnRecTips.BackColor = Color.FromArgb(32, 93, 28);
             btnRecTips.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold);
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
             btnRecTips.Location = new Point(273, 300);
             btnRecTips.Name = "btnRecTips";
@@ -120,6 +133,14 @@
             btnRecTips.Size = new Size(243, 34);
             btnRecTips.TabIndex = 4;
             btnRecTips.Text = "Recycling Tips";
+=======
+            btnRecTips.ForeColor = Color.White;
+            btnRecTips.Location = new Point(273, 270);
+            btnRecTips.Name = "btnRecTips";
+            btnRecTips.Size = new Size(243, 34);
+            btnRecTips.TabIndex = 4;
+            btnRecTips.Text = "Recycling Tips";
+>>>>>>> Stashed changes
             btnRecTips.UseVisualStyleBackColor = false;
             btnRecTips.Click += btnRecTips_Click;
 >>>>>>> Stashed changes
@@ -128,6 +149,7 @@
             // 
             btnLogout.BackColor = Color.FromArgb(32, 93, 28);
             btnLogout.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold);
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
             btnLogout.Location = new Point(273, 353);
             btnLogout.Name = "btnLogout";
@@ -152,6 +174,14 @@
             btnLogout.Size = new Size(243, 34);
             btnLogout.TabIndex = 5;
             btnLogout.Text = "Logout";
+=======
+            btnLogout.ForeColor = Color.White;
+            btnLogout.Location = new Point(273, 311);
+            btnLogout.Name = "btnLogout";
+            btnLogout.Size = new Size(243, 34);
+            btnLogout.TabIndex = 5;
+            btnLogout.Text = "Logout";
+>>>>>>> Stashed changes
             btnLogout.UseVisualStyleBackColor = false;
             btnLogout.Click += btnLogout_Click;
 >>>>>>> Stashed changes
@@ -161,6 +191,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
             ClientSize = new Size(800, 450);
             Controls.Add(lblUsermenu);
             Controls.Add(btnLogout);
@@ -169,6 +200,8 @@
             Controls.Add(btnAddWaste);
             Controls.Add(pictureBox1);
 =======
+=======
+>>>>>>> Stashed changes
             BackgroundImage = Properties.Resources.primary_bg;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(800, 400);

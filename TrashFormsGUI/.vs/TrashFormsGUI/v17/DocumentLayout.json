@@ -5,12 +5,16 @@
     {
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
       "AbsoluteMoniker": "D:0:0:{CF25CB1B-AEB1-47E6-9A3A-DB10E3154001}|TrashFormsGUI.csproj|c:\\users\\gilbryan\\documents\\projects\\money\\trashforms\\trashformsgui\\userform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{CF25CB1B-AEB1-47E6-9A3A-DB10E3154001}|TrashFormsGUI.csproj|solutionrelative:userform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
       "AbsoluteMoniker": "D:0:0:{CF25CB1B-AEB1-47E6-9A3A-DB10E3154001}|TrashFormsGUI.csproj|c:\\users\\gilbryan\\documents\\projects\\money\\trashforms\\trashformsgui\\adminform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{CF25CB1B-AEB1-47E6-9A3A-DB10E3154001}|TrashFormsGUI.csproj|solutionrelative:adminform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
@@ -23,6 +27,8 @@
       "RelativeMoniker": "D:0:0:{CF25CB1B-AEB1-47E6-9A3A-DB10E3154001}|TrashFormsGUI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
 >>>>>>> Stashed changes
 =======
+=======
+>>>>>>> Stashed changes
       "AbsoluteMoniker": "D:0:0:{CF25CB1B-AEB1-47E6-9A3A-DB10E3154001}|TrashFormsGUI.csproj|c:\\users\\gilbryan\\documents\\projects\\money\\trashforms\\trashformsgui\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{CF25CB1B-AEB1-47E6-9A3A-DB10E3154001}|TrashFormsGUI.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
@@ -33,6 +39,9 @@
     {
       "AbsoluteMoniker": "D:0:0:{CF25CB1B-AEB1-47E6-9A3A-DB10E3154001}|TrashFormsGUI.csproj|c:\\users\\gilbryan\\documents\\projects\\money\\trashforms\\trashformsgui\\trashformsgui.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
       "RelativeMoniker": "D:0:0:{CF25CB1B-AEB1-47E6-9A3A-DB10E3154001}|TrashFormsGUI.csproj|solutionrelative:trashformsgui.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     }
   ],
@@ -45,9 +54,13 @@
           "DockedWidth": 200,
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
           "SelectedChildIndex": 3,
 =======
           "SelectedChildIndex": 1,
+>>>>>>> Stashed changes
+=======
+          "SelectedChildIndex": 3,
 >>>>>>> Stashed changes
 =======
           "SelectedChildIndex": 3,
@@ -61,6 +74,7 @@
               "$type": "Document",
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
               "DocumentIndex": 2,
               "Title": "AddWasteForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\GilBryan\\Documents\\Projects\\MONEY\\TrashForms\\TrashFormsGUI\\AddWasteForm.cs",
@@ -70,6 +84,8 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-15T10:14:32.019Z",
 =======
+=======
+>>>>>>> Stashed changes
               "DocumentIndex": 1,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\GilBryan\\Documents\\Projects\\MONEY\\TrashForms\\TrashFormsGUI\\Form1.cs",
@@ -78,11 +94,15 @@
               "RelativeToolTip": "Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-15T16:16:00.711Z",
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
               "DocumentIndex": 1,
               "Title": "AdminForm.cs [Design]",
@@ -94,6 +114,8 @@
               "WhenOpened": "2025-05-15T10:14:30Z",
               "EditorCaption": " [Design]"
 =======
+=======
+>>>>>>> Stashed changes
               "DocumentIndex": 3,
               "Title": "TrashFormsGUI",
               "DocumentMoniker": "C:\\Users\\GilBryan\\Documents\\Projects\\MONEY\\TrashForms\\TrashFormsGUI\\TrashFormsGUI.csproj",
@@ -103,6 +125,9 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2025-05-15T15:56:09.874Z",
               "EditorCaption": ""
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
             },
             {
@@ -114,6 +139,7 @@
               "ToolTip": "C:\\Users\\GilBryan\\Documents\\Projects\\MONEY\\TrashForms\\TrashFormsGUI\\UserForm.cs [Design]",
               "RelativeToolTip": "UserForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
               "WhenOpened": "2025-05-15T10:13:58.609Z",
               "EditorCaption": " [Design]"
@@ -130,6 +156,8 @@
               "EditorCaption": ""
 >>>>>>> Stashed changes
 =======
+=======
+>>>>>>> Stashed changes
               "WhenOpened": "2025-05-15T15:09:45.098Z",
               "EditorCaption": " [Design]"
             },
@@ -145,6 +173,9 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2025-05-15T15:09:37.353Z",
               "EditorCaption": ""
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
             }
           ]
