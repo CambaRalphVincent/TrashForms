@@ -37,9 +37,18 @@ namespace TrashFormsGUI
                 return;
             }
 
-            string tips = dbManager.GetTipByWasteType(wasteType);
-            txtTips.Text = tips;
+            var tips = dbManager.GetAllTipsByWasteType(wasteType);
+            if (tips != null && tips.Count > 0)
+            {
+                // Join tips with new lines for proper formatting
+                txtTips.Text = string.Join(Environment.NewLine + Environment.NewLine, tips.Select((tip, i) => $"{i + 1}. {tip}"));
+            }
+            else
+            {
+                txtTips.Text = "No tips found for this waste type.";
+            }
         }
+
 
         private void btnCancel_Click(object sender, EventArgs e)
         {

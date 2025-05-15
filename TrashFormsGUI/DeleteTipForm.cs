@@ -13,6 +13,7 @@ namespace TrashFormsGUI
     public partial class DeleteTipForm : Form
     {
         private readonly DatabaseManager dbManager;
+        private List<string> currentTips = new List<string>();
 
         public DeleteTipForm(DatabaseManager dbManager)
         {
@@ -25,6 +26,7 @@ namespace TrashFormsGUI
             cmbWasteType.Items.AddRange(new object[] { "Plastic", "Glass", "Metal", "Organic", "Electronic" });
             cmbWasteType.SelectedIndex = 0;
             txtTipNumber.Clear();
+            txtSelectedTip.Clear();
             LoadTips();
             cmbWasteType.SelectedIndexChanged += cmbWasteType_SelectedIndexChanged;
         }
@@ -37,15 +39,16 @@ namespace TrashFormsGUI
         private void LoadTips()
         {
             lstTips.Items.Clear();
+            txtSelectedTip.Clear();
             string wasteType = cmbWasteType.SelectedItem?.ToString();
             if (string.IsNullOrEmpty(wasteType)) return;
 
-            var tips = dbManager.GetAllTipsByWasteType(wasteType);
-            if (tips != null && tips.Count > 0)
+            currentTips = dbManager.GetAllTipsByWasteType(wasteType) ?? new List<string>();
+            if (currentTips.Count > 0)
             {
-                for (int i = 0; i < tips.Count; i++)
+                for (int i = 0; i < currentTips.Count; i++)
                 {
-                    lstTips.Items.Add($"{i + 1}. {tips[i]}");
+                    lstTips.Items.Add($"{i + 1}. {currentTips[i]}");
                 }
             }
             else
@@ -56,9 +59,14 @@ namespace TrashFormsGUI
 
         private void lstTips_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (lstTips.SelectedIndex >= 0 && !lstTips.SelectedItem.ToString().StartsWith("No tips"))
+            if (lstTips.SelectedIndex >= 0 && currentTips.Count > lstTips.SelectedIndex)
             {
                 txtTipNumber.Text = (lstTips.SelectedIndex + 1).ToString();
+                txtSelectedTip.Text = currentTips[lstTips.SelectedIndex];
+            }
+            else
+            {
+                txtSelectedTip.Clear();
             }
         }
 

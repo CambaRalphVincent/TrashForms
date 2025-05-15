@@ -38,9 +38,20 @@ namespace TrashFormsGUI
                 return;
             }
 
-            dbManager.InsertOrUpdateTip(wasteType, tip);
-            MessageBox.Show("Recycling tip added successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            this.Close();
+            // Debug: Show the selected waste type and tip
+            // Remove or comment this out in production
+            MessageBox.Show($"WasteType: {wasteType}\nTip: {tip}", "Debug Info");
+
+            try
+            {
+                dbManager.InsertOrUpdateTip(wasteType, tip);
+                MessageBox.Show("Recycling tip added successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                this.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error adding recycling tip: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void btnCancel_Click(object sender, EventArgs e)

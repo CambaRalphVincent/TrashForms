@@ -7,11 +7,12 @@
         private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.Label lblWasteType;
         private System.Windows.Forms.ComboBox cmbWasteType;
+        private System.Windows.Forms.ListBox lstTips;
         private System.Windows.Forms.Label lblTipNumber;
         private System.Windows.Forms.TextBox txtTipNumber;
+        private System.Windows.Forms.TextBox txtSelectedTip;
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnCancel;
-        private System.Windows.Forms.ListBox lstTips;
 
         protected override void Dispose(bool disposing)
         {
@@ -26,11 +27,12 @@
             lblTitle = new Label();
             lblWasteType = new Label();
             cmbWasteType = new ComboBox();
+            lstTips = new ListBox();
             lblTipNumber = new Label();
             txtTipNumber = new TextBox();
+            txtSelectedTip = new TextBox();
             btnDelete = new Button();
             btnCancel = new Button();
-            lstTips = new ListBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -58,7 +60,7 @@
             // 
             lblWasteType.AutoSize = true;
             lblWasteType.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblWasteType.Location = new Point(220, 250);
+            lblWasteType.Location = new Point(95, 247);
             lblWasteType.Name = "lblWasteType";
             lblWasteType.Size = new Size(126, 23);
             lblWasteType.TabIndex = 2;
@@ -68,36 +70,57 @@
             // 
             cmbWasteType.DropDownStyle = ComboBoxStyle.DropDownList;
             cmbWasteType.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            cmbWasteType.Location = new Point(350, 247);
+            cmbWasteType.Location = new Point(227, 247);
             cmbWasteType.Name = "cmbWasteType";
             cmbWasteType.Size = new Size(250, 31);
             cmbWasteType.TabIndex = 3;
+            // 
+            // lstTips
+            // 
+            lstTips.Font = new Font("Century Gothic", 11F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lstTips.ItemHeight = 21;
+            lstTips.Location = new Point(227, 284);
+            lstTips.Name = "lstTips";
+            lstTips.Size = new Size(250, 88);
+            lstTips.TabIndex = 4;
+            lstTips.SelectedIndexChanged += lstTips_SelectedIndexChanged;
             // 
             // lblTipNumber
             // 
             lblTipNumber.AutoSize = true;
             lblTipNumber.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblTipNumber.Location = new Point(220, 400);
+            lblTipNumber.Location = new Point(95, 397);
             lblTipNumber.Name = "lblTipNumber";
             lblTipNumber.Size = new Size(125, 23);
-            lblTipNumber.TabIndex = 4;
+            lblTipNumber.TabIndex = 5;
             lblTipNumber.Text = "Tip Number:";
             // 
             // txtTipNumber
             // 
             txtTipNumber.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtTipNumber.Location = new Point(350, 397);
+            txtTipNumber.Location = new Point(226, 397);
             txtTipNumber.Name = "txtTipNumber";
             txtTipNumber.Size = new Size(250, 32);
-            txtTipNumber.TabIndex = 5;
+            txtTipNumber.TabIndex = 6;
+            // 
+            // txtSelectedTip
+            // 
+            txtSelectedTip.Font = new Font("Century Gothic", 11F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtSelectedTip.Location = new Point(227, 440);
+            txtSelectedTip.Multiline = true;
+            txtSelectedTip.Name = "txtSelectedTip";
+            txtSelectedTip.ReadOnly = true;
+            txtSelectedTip.ScrollBars = ScrollBars.Vertical;
+            txtSelectedTip.Size = new Size(366, 60);
+            txtSelectedTip.TabIndex = 7;
             // 
             // btnDelete
             // 
             btnDelete.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold);
-            btnDelete.Location = new Point(350, 450);
+            btnDelete.Location = new Point(620, 397);
             btnDelete.Name = "btnDelete";
             btnDelete.Size = new Size(120, 45);
-            btnDelete.TabIndex = 6;
+            btnDelete.TabIndex = 8;
             btnDelete.Text = "Delete";
             btnDelete.UseVisualStyleBackColor = true;
             btnDelete.Click += btnDelete_Click;
@@ -105,23 +128,13 @@
             // btnCancel
             // 
             btnCancel.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold);
-            btnCancel.Location = new Point(480, 450);
+            btnCancel.Location = new Point(620, 455);
             btnCancel.Name = "btnCancel";
             btnCancel.Size = new Size(120, 45);
-            btnCancel.TabIndex = 7;
+            btnCancel.TabIndex = 9;
             btnCancel.Text = "Cancel";
             btnCancel.UseVisualStyleBackColor = true;
             btnCancel.Click += btnCancel_Click;
-            // 
-            // lstTips
-            // 
-            lstTips.Font = new Font("Century Gothic", 11F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lstTips.ItemHeight = 21;
-            lstTips.Location = new Point(350, 285);
-            lstTips.Name = "lstTips";
-            lstTips.Size = new Size(451, 88);
-            lstTips.TabIndex = 8;
-            lstTips.SelectedIndexChanged += lstTips_SelectedIndexChanged;
             // 
             // DeleteTipForm
             // 
@@ -135,6 +148,7 @@
             Controls.Add(lstTips);
             Controls.Add(lblTipNumber);
             Controls.Add(txtTipNumber);
+            Controls.Add(txtSelectedTip);
             Controls.Add(btnDelete);
             Controls.Add(btnCancel);
             FormBorderStyle = FormBorderStyle.FixedDialog;

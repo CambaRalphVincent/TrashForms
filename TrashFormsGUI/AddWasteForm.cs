@@ -42,38 +42,20 @@ namespace TrashFormsGUI
 
             if (success)
             {
-                string tip = "";
-                switch (wasteType)
+                // Show all tips for the selected waste type
+                var allTips = dbManager.GetAllTipsByWasteType(wasteType);
+                using (var allTipsForm = new ShowAllTipsForm(wasteType, allTips))
                 {
-                    case "Plastic":
-                        tip = new PlasticWaste(0, userId, itemName, quantity).GetRecycleTip();
-                        break;
-                    case "Glass":
-                        tip = new GlassWaste(0, userId, itemName, quantity).GetRecycleTip();
-                        break;
-                    case "Metal":
-                        tip = new MetalWaste(0, userId, itemName, quantity).GetRecycleTip();
-                        break;
-                    case "Organic":
-                        tip = new OrganicWaste(0, userId, itemName, quantity).GetRecycleTip();
-                        break;
-                    case "Electronic":
-                        tip = new ElectronicWaste(0, userId, itemName, quantity).GetRecycleTip();
-                        break;
-                    default:
-                        tip = dbManager.GetTipByWasteType(wasteType);
-                        break;
+                    allTipsForm.ShowDialog(this);
                 }
 
-                using (var tipForm = new ShowTipForm(tip, wasteType))
-                {
-                    tipForm.ShowDialog(this);
-                }
                 this.Close();
             }
-
+            else
+            {
+                MessageBox.Show("Failed to add waste item.");
+            }
         }
-
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
@@ -102,34 +84,12 @@ namespace TrashFormsGUI
 
             if (success)
             {
-                string tip = "";
-                // Show the tip from the corresponding waste class
-                switch (wasteType)
+                var allTips = dbManager.GetAllTipsByWasteType(wasteType);
+                using (var allTipsForm = new ShowAllTipsForm(wasteType, allTips))
                 {
-                    case "Plastic":
-                        tip = new PlasticWaste(0, userId, itemName, quantity).GetRecycleTip();
-                        break;
-                    case "Glass":
-                        tip = new GlassWaste(0, userId, itemName, quantity).GetRecycleTip();
-                        break;
-                    case "Metal":
-                        tip = new MetalWaste(0, userId, itemName, quantity).GetRecycleTip();
-                        break;
-                    case "Organic":
-                        tip = new OrganicWaste(0, userId, itemName, quantity).GetRecycleTip();
-                        break;
-                    case "Electronic":
-                        tip = new ElectronicWaste(0, userId, itemName, quantity).GetRecycleTip();
-                        break;
-                    default:
-                        tip = dbManager.GetTipByWasteType(wasteType);
-                        break;
+                    allTipsForm.ShowDialog(this);
                 }
 
-                using (var tipForm = new ShowTipForm(tip, wasteType))
-                {
-                    tipForm.ShowDialog(this);
-                }
                 this.Close();
             }
             else
@@ -137,7 +97,6 @@ namespace TrashFormsGUI
                 MessageBox.Show("Failed to add waste item.");
             }
         }
-
 
         private void btnCancel_Click_1(object sender, EventArgs e)
         {
