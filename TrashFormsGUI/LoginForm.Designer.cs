@@ -51,10 +51,11 @@
             // 
             lblLogin.AutoSize = true;
             lblLogin.BackColor = Color.Transparent;
-            lblLogin.Font = new Font("Montserrat", 12F, FontStyle.Italic, GraphicsUnit.Point, 0);
-            lblLogin.Location = new Point(273, 150);
+            lblLogin.Font = new Font("Century Gothic", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            lblLogin.ForeColor = Color.Green;
+            lblLogin.Location = new Point(236, 170);
             lblLogin.Name = "lblLogin";
-            lblLogin.Size = new Size(96, 22);
+            lblLogin.Size = new Size(88, 21);
             lblLogin.TabIndex = 1;
             lblLogin.Text = "User Login";
             // 
@@ -62,10 +63,11 @@
             // 
             lblUsername.AutoSize = true;
             lblUsername.BackColor = Color.Transparent;
-            lblUsername.Font = new Font("Montserrat", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblUsername.Location = new Point(192, 188);
+            lblUsername.Font = new Font("Century Gothic", 12F, FontStyle.Bold);
+            lblUsername.ForeColor = Color.FromArgb(0, 64, 0);
+            lblUsername.Location = new Point(236, 202);
             lblUsername.Name = "lblUsername";
-            lblUsername.Size = new Size(100, 22);
+            lblUsername.Size = new Size(91, 19);
             lblUsername.TabIndex = 2;
             lblUsername.Text = "Username:";
             // 
@@ -73,17 +75,18 @@
             // 
             lblPassword.AutoSize = true;
             lblPassword.BackColor = Color.Transparent;
-            lblPassword.Font = new Font("Montserrat", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblPassword.Location = new Point(197, 219);
+            lblPassword.Font = new Font("Century Gothic", 12F, FontStyle.Bold);
+            lblPassword.ForeColor = Color.FromArgb(0, 64, 0);
+            lblPassword.Location = new Point(243, 236);
             lblPassword.Name = "lblPassword";
-            lblPassword.Size = new Size(95, 22);
+            lblPassword.Size = new Size(84, 19);
             lblPassword.TabIndex = 4;
             lblPassword.Text = "Password:";
             // 
             // txtUsername
             // 
-            txtUsername.Font = new Font("Montserrat", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtUsername.Location = new Point(306, 185);
+            txtUsername.Font = new Font("Century Gothic", 12F);
+            txtUsername.Location = new Point(328, 198);
             txtUsername.Margin = new Padding(3, 2, 3, 2);
             txtUsername.Name = "txtUsername";
             txtUsername.Size = new Size(219, 27);
@@ -91,8 +94,8 @@
             // 
             // txtPassword
             // 
-            txtPassword.Font = new Font("Montserrat", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtPassword.Location = new Point(306, 219);
+            txtPassword.Font = new Font("Century Gothic", 12F);
+            txtPassword.Location = new Point(328, 232);
             txtPassword.Margin = new Padding(3, 2, 3, 2);
             txtPassword.Name = "txtPassword";
             txtPassword.PasswordChar = '*';
@@ -102,9 +105,10 @@
             // btnLogin
             // 
             btnLogin.BackColor = Color.FromArgb(32, 93, 28);
-            btnLogin.Font = new Font("Montserrat", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnLogin.FlatStyle = FlatStyle.Popup;
+            btnLogin.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold);
             btnLogin.ForeColor = Color.White;
-            btnLogin.Location = new Point(273, 262);
+            btnLogin.Location = new Point(270, 279);
             btnLogin.Name = "btnLogin";
             btnLogin.Size = new Size(105, 34);
             btnLogin.TabIndex = 6;
@@ -115,9 +119,10 @@
             // btnCancel
             // 
             btnCancel.BackColor = Color.FromArgb(32, 93, 28);
-            btnCancel.Font = new Font("Montserrat", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnCancel.FlatStyle = FlatStyle.Popup;
+            btnCancel.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold);
             btnCancel.ForeColor = Color.White;
-            btnCancel.Location = new Point(411, 262);
+            btnCancel.Location = new Point(408, 279);
             btnCancel.Name = "btnCancel";
             btnCancel.Size = new Size(105, 34);
             btnCancel.TabIndex = 7;

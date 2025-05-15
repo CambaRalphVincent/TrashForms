@@ -42,16 +42,18 @@
             // lblTitle
             // 
             lblTitle.AutoSize = true;
-            lblTitle.Font = new Font("Montserrat", 12F, FontStyle.Italic, GraphicsUnit.Point, 0);
-            lblTitle.Location = new Point(158, 98);
+            lblTitle.Font = new Font("Century Gothic", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            lblTitle.ForeColor = Color.FromArgb(0, 64, 0);
+            lblTitle.Location = new Point(52, 106);
             lblTitle.Name = "lblTitle";
-            lblTitle.Size = new Size(172, 22);
+            lblTitle.Size = new Size(164, 21);
             lblTitle.TabIndex = 1;
             lblTitle.Text = "Recycling Summary";
             // 
             // txtSummary
             // 
-            txtSummary.Font = new Font("Montserrat", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtSummary.BackColor = Color.White;
+            txtSummary.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtSummary.Location = new Point(52, 128);
             txtSummary.Margin = new Padding(3, 2, 3, 2);
             txtSummary.Multiline = true;
@@ -64,9 +66,10 @@
             // btnOk
             // 
             btnOk.BackColor = Color.FromArgb(32, 93, 28);
-            btnOk.Font = new Font("Montserrat", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnOk.FlatStyle = FlatStyle.Popup;
+            btnOk.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnOk.ForeColor = Color.White;
-            btnOk.Location = new Point(201, 232);
+            btnOk.Location = new Point(191, 230);
             btnOk.Margin = new Padding(3, 2, 3, 2);
             btnOk.Name = "btnOk";
             btnOk.Size = new Size(105, 30);
@@ -79,7 +82,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.FromArgb(150, 205, 107);
+            BackColor = Color.FromArgb(192, 255, 192);
             ClientSize = new Size(511, 271);
             Controls.Add(pictureBox1);
             Controls.Add(lblTitle);

@@ -10,7 +10,7 @@ namespace TrashFormsGUI
         public Form1()
         {
             InitializeComponent();
-            dbManager = new DatabaseManager("localhost", "root", "852963123a", "trashforms_db");
+            dbManager = new DatabaseManager("localhost", "root", "23-01893", "trashforms_db");
             dbManager.CreateTables();
         }
 

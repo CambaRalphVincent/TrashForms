@@ -26,10 +26,12 @@
             // 
             // pictureBox1
             // 
+            pictureBox1.BackColor = Color.Transparent;
             pictureBox1.Image = Properties.Resources.Sample_UI__1_2;
-            pictureBox1.Location = new Point(95, 39);
+            pictureBox1.Location = new Point(83, 48);
+            pictureBox1.Margin = new Padding(3, 2, 3, 2);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(706, 145);
+            pictureBox1.Size = new Size(618, 109);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
@@ -37,45 +39,56 @@
             // lblTitle
             // 
             lblTitle.AutoSize = true;
-            lblTitle.Font = new Font("Century Gothic", 12F, FontStyle.Italic, GraphicsUnit.Point, 0);
-            lblTitle.Location = new Point(312, 200);
+            lblTitle.BackColor = Color.Transparent;
+            lblTitle.Font = new Font("Century Gothic", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            lblTitle.ForeColor = Color.White;
+            lblTitle.Location = new Point(157, 176);
             lblTitle.Name = "lblTitle";
-            lblTitle.Size = new Size(174, 23);
+            lblTitle.Size = new Size(144, 21);
             lblTitle.TabIndex = 1;
             lblTitle.Text = "All Recycling Tips";
             // 
             // txtAllTips
             // 
-            txtAllTips.Font = new Font("Century Gothic", 11F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtAllTips.Location = new Point(178, 240);
+            txtAllTips.BackColor = Color.FromArgb(192, 255, 192);
+            txtAllTips.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtAllTips.Location = new Point(157, 197);
+            txtAllTips.Margin = new Padding(3, 2, 3, 2);
             txtAllTips.Multiline = true;
             txtAllTips.Name = "txtAllTips";
             txtAllTips.ReadOnly = true;
             txtAllTips.ScrollBars = ScrollBars.Vertical;
-            txtAllTips.Size = new Size(547, 180);
+            txtAllTips.Size = new Size(479, 136);
             txtAllTips.TabIndex = 2;
             // 
             // btnOk
             // 
+            btnOk.BackColor = Color.Green;
+            btnOk.FlatStyle = FlatStyle.Popup;
             btnOk.Font = new Font("Century Gothic", 12F, FontStyle.Bold);
-            btnOk.Location = new Point(370, 440);
+            btnOk.ForeColor = Color.White;
+            btnOk.Location = new Point(337, 337);
+            btnOk.Margin = new Padding(3, 2, 3, 2);
             btnOk.Name = "btnOk";
-            btnOk.Size = new Size(120, 40);
+            btnOk.Size = new Size(105, 30);
             btnOk.TabIndex = 3;
             btnOk.Text = "OK";
-            btnOk.UseVisualStyleBackColor = true;
+            btnOk.UseVisualStyleBackColor = false;
             btnOk.Click += btnOk_Click;
             // 
             // ShowAllTipsForm
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(914, 533);
+            BackgroundImage = Properties.Resources.bg2;
+            BackgroundImageLayout = ImageLayout.Stretch;
+            ClientSize = new Size(800, 400);
             Controls.Add(pictureBox1);
             Controls.Add(lblTitle);
             Controls.Add(txtAllTips);
             Controls.Add(btnOk);
             FormBorderStyle = FormBorderStyle.FixedDialog;
+            Margin = new Padding(3, 2, 3, 2);
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "ShowAllTipsForm";

@@ -49,10 +49,11 @@
             // 
             lblTitle.AutoSize = true;
             lblTitle.BackColor = Color.Transparent;
-            lblTitle.Font = new Font("Montserrat", 12F, FontStyle.Italic, GraphicsUnit.Point, 0);
-            lblTitle.Location = new Point(273, 150);
+            lblTitle.Font = new Font("Century Gothic", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            lblTitle.ForeColor = Color.FromArgb(0, 64, 0);
+            lblTitle.Location = new Point(192, 159);
             lblTitle.Name = "lblTitle";
-            lblTitle.Size = new Size(125, 22);
+            lblTitle.Size = new Size(120, 21);
             lblTitle.TabIndex = 1;
             lblTitle.Text = "Recycling Tips";
             lblTitle.Click += lblTitle_Click;
@@ -61,10 +62,11 @@
             // 
             lblWasteType.AutoSize = true;
             lblWasteType.BackColor = Color.Transparent;
-            lblWasteType.Font = new Font("Montserrat", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblWasteType.Location = new Point(192, 188);
+            lblWasteType.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblWasteType.ForeColor = Color.White;
+            lblWasteType.Location = new Point(201, 189);
             lblWasteType.Name = "lblWasteType";
-            lblWasteType.Size = new Size(112, 22);
+            lblWasteType.Size = new Size(99, 19);
             lblWasteType.TabIndex = 2;
             lblWasteType.Text = "Waste Type:";
             // 
@@ -82,7 +84,8 @@
             // btnShowTips
             // 
             btnShowTips.BackColor = Color.FromArgb(32, 93, 28);
-            btnShowTips.Font = new Font("Montserrat", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnShowTips.FlatStyle = FlatStyle.Popup;
+            btnShowTips.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnShowTips.ForeColor = Color.White;
             btnShowTips.Location = new Point(273, 225);
             btnShowTips.Name = "btnShowTips";
@@ -95,7 +98,8 @@
             // btnCancel
             // 
             btnCancel.BackColor = Color.FromArgb(32, 93, 28);
-            btnCancel.Font = new Font("Montserrat", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnCancel.FlatStyle = FlatStyle.Popup;
+            btnCancel.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnCancel.ForeColor = Color.White;
             btnCancel.Location = new Point(411, 225);
             btnCancel.Name = "btnCancel";
@@ -107,7 +111,7 @@
             // 
             // txtTips
             // 
-            txtTips.Font = new Font("Montserrat", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtTips.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtTips.Location = new Point(128, 278);
             txtTips.Margin = new Padding(3, 2, 3, 2);
             txtTips.Multiline = true;
