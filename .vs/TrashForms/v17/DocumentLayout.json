@@ -1,7 +1,40 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\GilBryan\\Documents\\Projects\\MONEY\\TrashForms\\",
+<<<<<<< Updated upstream
   "Documents": [],
+=======
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\GilBryan\\Documents\\Projects\\MONEY\\TrashForms\\TrashFormsGUI\\Form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:TrashFormsGUI\\Form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\GilBryan\\Documents\\Projects\\MONEY\\TrashForms\\TrashFormsGUI\\Services\\MySqlServices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:TrashFormsGUI\\Services\\MySqlServices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\GilBryan\\Documents\\Projects\\MONEY\\TrashForms\\TempForm\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:TempForm\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\GilBryan\\Documents\\Projects\\MONEY\\TrashForms\\TempForm\\DatabaseManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:TempForm\\DatabaseManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\GilBryan\\Documents\\Projects\\MONEY\\TrashForms\\TempForm\\Form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:TempForm\\Form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\GilBryan\\Documents\\Projects\\MONEY\\TrashForms\\TempForm\\Form1.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:TempForm\\Form1.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\GilBryan\\Documents\\Projects\\MONEY\\TrashForms\\TrashFormsGUI\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:TrashFormsGUI\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+>>>>>>> Stashed changes
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +42,104 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
+<<<<<<< Updated upstream
           "SelectedChildIndex": -1,
+=======
+          "SelectedChildIndex": 1,
+>>>>>>> Stashed changes
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+<<<<<<< Updated upstream
+=======
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\GilBryan\\Documents\\Projects\\MONEY\\TrashForms\\TrashFormsGUI\\Form1.cs",
+              "RelativeDocumentMoniker": "TrashFormsGUI\\Form1.cs",
+              "ToolTip": "C:\\Users\\GilBryan\\Documents\\Projects\\MONEY\\TrashForms\\TrashFormsGUI\\Form1.cs",
+              "RelativeToolTip": "TrashFormsGUI\\Form1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAABLAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T12:52:10.28Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DatabaseManager.cs",
+              "DocumentMoniker": "C:\\Users\\GilBryan\\Documents\\Projects\\MONEY\\TrashForms\\TempForm\\DatabaseManager.cs",
+              "RelativeDocumentMoniker": "TempForm\\DatabaseManager.cs",
+              "ToolTip": "C:\\Users\\GilBryan\\Documents\\Projects\\MONEY\\TrashForms\\TempForm\\DatabaseManager.cs",
+              "RelativeToolTip": "TempForm\\DatabaseManager.cs",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAxwGQAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T11:08:24.456Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\GilBryan\\Documents\\Projects\\MONEY\\TrashForms\\TempForm\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "TempForm\\Form1.Designer.cs",
+              "ToolTip": "C:\\Users\\GilBryan\\Documents\\Projects\\MONEY\\TrashForms\\TempForm\\Form1.Designer.cs",
+              "RelativeToolTip": "TempForm\\Form1.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T11:08:22.852Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MySqlServices.cs",
+              "DocumentMoniker": "C:\\Users\\GilBryan\\Documents\\Projects\\MONEY\\TrashForms\\TrashFormsGUI\\Services\\MySqlServices.cs",
+              "RelativeDocumentMoniker": "TrashFormsGUI\\Services\\MySqlServices.cs",
+              "ToolTip": "C:\\Users\\GilBryan\\Documents\\Projects\\MONEY\\TrashForms\\TrashFormsGUI\\Services\\MySqlServices.cs",
+              "RelativeToolTip": "TrashFormsGUI\\Services\\MySqlServices.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABIAAABKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T11:06:37.982Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\GilBryan\\Documents\\Projects\\MONEY\\TrashForms\\TempForm\\Form1.cs",
+              "RelativeDocumentMoniker": "TempForm\\Form1.cs",
+              "ToolTip": "C:\\Users\\GilBryan\\Documents\\Projects\\MONEY\\TrashForms\\TempForm\\Form1.cs",
+              "RelativeToolTip": "TempForm\\Form1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAABOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T10:59:11.184Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\GilBryan\\Documents\\Projects\\MONEY\\TrashForms\\TempForm\\Program.cs",
+              "RelativeDocumentMoniker": "TempForm\\Program.cs",
+              "ToolTip": "C:\\Users\\GilBryan\\Documents\\Projects\\MONEY\\TrashForms\\TempForm\\Program.cs",
+              "RelativeToolTip": "TempForm\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T10:56:40.634Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\GilBryan\\Documents\\Projects\\MONEY\\TrashForms\\TrashFormsGUI\\Program.cs",
+              "RelativeDocumentMoniker": "TrashFormsGUI\\Program.cs",
+              "ToolTip": "C:\\Users\\GilBryan\\Documents\\Projects\\MONEY\\TrashForms\\TrashFormsGUI\\Program.cs",
+              "RelativeToolTip": "TrashFormsGUI\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T10:56:29.08Z"
+>>>>>>> Stashed changes
             }
           ]
         }

@@ -14,7 +14,11 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TrashFormsGUI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
+<<<<<<< Updated upstream
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+69d80c4d131b8cb546945e7032321f28cc5ef7ea")]
+=======
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1364dc260972adc22d99dc1465105d9b1ae868ee")]
+>>>>>>> Stashed changes
 [assembly: System.Reflection.AssemblyProductAttribute("TrashFormsGUI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TrashFormsGUI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

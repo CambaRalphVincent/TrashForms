@@ -1,8 +1,18 @@
 {
   "ExpandedNodes": [
     "",
+<<<<<<< Updated upstream
     "\\TrashFormsGUI"
   ],
   "SelectedNode": "\\TrashFormsGUI\\TrashFormsGUI.sln",
+=======
+    "\\TempForm",
+    "\\TempForm\\bin",
+    "\\TempForm\\obj",
+    "\\TrashFormsGUI",
+    "\\TrashFormsGUI\\Services"
+  ],
+  "SelectedNode": "\\TrashFormsGUI\\Program.cs",
+>>>>>>> Stashed changes
   "PreviewInSolutionExplorer": false
 }

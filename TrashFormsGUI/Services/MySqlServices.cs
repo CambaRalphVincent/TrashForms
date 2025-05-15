@@ -12,10 +12,11 @@ namespace TrashFormsGUI.Services
     {
         private string connectionString;
 
+
         public MySqlService()
         {
             // Example connection string – adjust to your own settings
-            connectionString = "server=localhost;uid=root;pwd=yourpassword;database=yourdb;";
+            connectionString = "server=localhost;uid=root;pwd=yourpassword;database=trashforms_db;";
         }
 
         public MySqlConnection GetConnection()

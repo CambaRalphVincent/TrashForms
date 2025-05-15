@@ -1,0 +1,5 @@
+C:\Users\GilBryan\Documents\Projects\MONEY\TrashForms\TempForm\obj\Debug\TempForm.csproj.AssemblyReference.cache
+C:\Users\GilBryan\Documents\Projects\MONEY\TrashForms\TempForm\obj\Debug\TempForm.LoginForm.resources
+C:\Users\GilBryan\Documents\Projects\MONEY\TrashForms\TempForm\obj\Debug\TempForm.Properties.Resources.resources
+C:\Users\GilBryan\Documents\Projects\MONEY\TrashForms\TempForm\obj\Debug\TempForm.csproj.GenerateResource.cache
+C:\Users\GilBryan\Documents\Projects\MONEY\TrashForms\TempForm\obj\Debug\TempForm.csproj.CoreCompileInputs.cache

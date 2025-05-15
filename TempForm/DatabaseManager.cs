@@ -48,47 +48,51 @@ namespace TempForm
         public void CreateTables()
         {
             string userTable = @"CREATE TABLE IF NOT EXISTS Users (
-                            user_id INT AUTO_INCREMENT PRIMARY KEY,
-                            username VARCHAR(50) UNIQUE NOT NULL,
-                            user_password VARCHAR(50) NOT NULL,
-                            user_role VARCHAR(10) NOT NULL
-                         );";
+                   user_id INT AUTO_INCREMENT PRIMARY KEY,
+                   username VARCHAR(50) UNIQUE NOT NULL,
+                   user_password VARCHAR(50) NOT NULL,
+                   user_role VARCHAR(10) NOT NULL
+                );";
 
             string wasteTable = @"CREATE TABLE IF NOT EXISTS WasteItems (
-                            item_id INT AUTO_INCREMENT PRIMARY KEY,
-                            user_id INT NOT NULL,
-                            item_name VARCHAR(100) NOT NULL,
-                            quantity INT NOT NULL,
-                            waste_type VARCHAR(50) NOT NULL,
-                            FOREIGN KEY(user_id) REFERENCES Users(user_id),
-                            INDEX(waste_type)
-                         );";
+                   item_id INT AUTO_INCREMENT PRIMARY KEY,
+                   user_id INT NOT NULL,
+                   item_name VARCHAR(100) NOT NULL,
+                   quantity INT NOT NULL,
+                   waste_type VARCHAR(50) NOT NULL,
+                   INDEX(waste_type),
+                   FOREIGN KEY(user_id) REFERENCES Users(user_id) ON DELETE CASCADE
+               );";
 
             string tipsTable = @"CREATE TABLE IF NOT EXISTS RecyclingTips (
-                            tip_id INT AUTO_INCREMENT PRIMARY KEY,
-                            waste_type VARCHAR(50) NOT NULL,
-                            tip TEXT NOT NULL,
-                            FOREIGN KEY(waste_type) REFERENCES WasteItems(waste_type) ON DELETE CASCADE
-                         );";
+                   tip_id INT AUTO_INCREMENT PRIMARY KEY,
+                   waste_type VARCHAR(50) NOT NULL UNIQUE,
+                   tip TEXT NOT NULL
+               );";
 
             try
             {
-                using (MySqlCommand cmd = new MySqlCommand(userTable, connection))
+                using (MySqlConnection conn = GetConnection()) // Use fresh connection
                 {
-                    cmd.ExecuteNonQuery();
-                }
+                    conn.Open();
 
-                using (MySqlCommand cmd = new MySqlCommand(wasteTable, connection))
-                {
-                    cmd.ExecuteNonQuery();
-                }
+                    using (var cmd = new MySqlCommand(userTable, conn))
+                    {
+                        cmd.ExecuteNonQuery();
+                    }
 
-                using (MySqlCommand cmd = new MySqlCommand(tipsTable, connection))
-                {
-                    cmd.ExecuteNonQuery();
-                }
+                    using (var cmd = new MySqlCommand(wasteTable, conn))
+                    {
+                        cmd.ExecuteNonQuery();
+                    }
 
-                Console.WriteLine("Tables created successfully!");
+                    using (var cmd = new MySqlCommand(tipsTable, conn))
+                    {
+                        cmd.ExecuteNonQuery();
+                    }
+
+                    Console.WriteLine("Tables created successfully!");
+                }
             }
             catch (MySqlException e)
             {
