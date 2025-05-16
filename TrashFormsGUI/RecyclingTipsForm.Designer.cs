@@ -38,9 +38,10 @@
             // 
             pictureBox1.BackColor = Color.Transparent;
             pictureBox1.Image = Properties.Resources.Sample_UI__1_2;
-            pictureBox1.Location = new Point(83, 29);
+            pictureBox1.Location = new Point(95, 39);
+            pictureBox1.Margin = new Padding(3, 4, 3, 4);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(618, 109);
+            pictureBox1.Size = new Size(706, 145);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
@@ -49,10 +50,11 @@
             // 
             lblTitle.AutoSize = true;
             lblTitle.BackColor = Color.Transparent;
-            lblTitle.Font = new Font("Montserrat", 12F, FontStyle.Italic, GraphicsUnit.Point, 0);
-            lblTitle.Location = new Point(273, 150);
+            lblTitle.Font = new Font("Century Gothic", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            lblTitle.ForeColor = Color.FromArgb(0, 64, 0);
+            lblTitle.Location = new Point(219, 212);
             lblTitle.Name = "lblTitle";
-            lblTitle.Size = new Size(125, 22);
+            lblTitle.Size = new Size(149, 23);
             lblTitle.TabIndex = 1;
             lblTitle.Text = "Recycling Tips";
             lblTitle.Click += lblTitle_Click;
@@ -61,10 +63,11 @@
             // 
             lblWasteType.AutoSize = true;
             lblWasteType.BackColor = Color.Transparent;
-            lblWasteType.Font = new Font("Montserrat", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblWasteType.Location = new Point(192, 188);
+            lblWasteType.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblWasteType.ForeColor = Color.White;
+            lblWasteType.Location = new Point(219, 250);
             lblWasteType.Name = "lblWasteType";
-            lblWasteType.Size = new Size(112, 22);
+            lblWasteType.Size = new Size(127, 23);
             lblWasteType.TabIndex = 2;
             lblWasteType.Text = "Waste Type:";
             // 
@@ -73,20 +76,21 @@
             cmbWasteType.BackColor = SystemColors.Window;
             cmbWasteType.DropDownStyle = ComboBoxStyle.DropDownList;
             cmbWasteType.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            cmbWasteType.Location = new Point(306, 185);
-            cmbWasteType.Margin = new Padding(3, 2, 3, 2);
+            cmbWasteType.Location = new Point(350, 247);
             cmbWasteType.Name = "cmbWasteType";
-            cmbWasteType.Size = new Size(219, 29);
+            cmbWasteType.Size = new Size(250, 31);
             cmbWasteType.TabIndex = 3;
             // 
             // btnShowTips
             // 
             btnShowTips.BackColor = Color.FromArgb(32, 93, 28);
-            btnShowTips.Font = new Font("Montserrat", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnShowTips.FlatStyle = FlatStyle.Popup;
+            btnShowTips.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnShowTips.ForeColor = Color.White;
-            btnShowTips.Location = new Point(273, 225);
+            btnShowTips.Location = new Point(312, 300);
+            btnShowTips.Margin = new Padding(3, 4, 3, 4);
             btnShowTips.Name = "btnShowTips";
-            btnShowTips.Size = new Size(105, 34);
+            btnShowTips.Size = new Size(120, 45);
             btnShowTips.TabIndex = 4;
             btnShowTips.Text = "Show Tips";
             btnShowTips.UseVisualStyleBackColor = false;
@@ -95,11 +99,13 @@
             // btnCancel
             // 
             btnCancel.BackColor = Color.FromArgb(32, 93, 28);
-            btnCancel.Font = new Font("Montserrat", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnCancel.FlatStyle = FlatStyle.Popup;
+            btnCancel.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnCancel.ForeColor = Color.White;
-            btnCancel.Location = new Point(411, 225);
+            btnCancel.Location = new Point(470, 300);
+            btnCancel.Margin = new Padding(3, 4, 3, 4);
             btnCancel.Name = "btnCancel";
-            btnCancel.Size = new Size(105, 34);
+            btnCancel.Size = new Size(120, 45);
             btnCancel.TabIndex = 5;
             btnCancel.Text = "Cancel";
             btnCancel.UseVisualStyleBackColor = false;
@@ -107,24 +113,23 @@
             // 
             // txtTips
             // 
-            txtTips.Font = new Font("Montserrat", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtTips.Location = new Point(128, 278);
-            txtTips.Margin = new Padding(3, 2, 3, 2);
+            txtTips.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtTips.Location = new Point(146, 371);
             txtTips.Multiline = true;
             txtTips.Name = "txtTips";
             txtTips.ReadOnly = true;
             txtTips.ScrollBars = ScrollBars.Vertical;
-            txtTips.Size = new Size(509, 91);
+            txtTips.Size = new Size(581, 120);
             txtTips.TabIndex = 6;
             txtTips.TextChanged += txtTips_TextChanged;
             // 
             // RecyclingTipsForm
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.bg2;
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(800, 400);
+            ClientSize = new Size(914, 533);
             Controls.Add(pictureBox1);
             Controls.Add(lblTitle);
             Controls.Add(lblWasteType);
@@ -133,7 +138,6 @@
             Controls.Add(btnCancel);
             Controls.Add(txtTips);
             FormBorderStyle = FormBorderStyle.FixedDialog;
-            Margin = new Padding(3, 2, 3, 2);
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "RecyclingTipsForm";

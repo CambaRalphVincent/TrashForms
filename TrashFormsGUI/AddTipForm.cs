@@ -38,15 +38,19 @@ namespace TrashFormsGUI
                 return;
             }
 
-            // Debug: Show the selected waste type and tip
-            // Remove or comment this out in production
-            MessageBox.Show($"WasteType: {wasteType}\nTip: {tip}", "Debug Info");
-
             try
             {
                 dbManager.InsertOrUpdateTip(wasteType, tip);
-                MessageBox.Show("Recycling tip added successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                this.Close();
+                MessageBox.Show(
+                    $"Recycling tip added successfully!\n\nWaste Type: {wasteType}\nTip: {tip}",
+                    "Confirmation",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Information
+                );
+                txtTip.Clear(); // Clear the tip input for the next entry
+                txtTip.Focus(); // Set focus back to the tip input
+                                // Optionally reset waste type selection:
+                                // cmbWasteType.SelectedIndex = 0;
             }
             catch (Exception ex)
             {

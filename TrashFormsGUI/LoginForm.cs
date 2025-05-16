@@ -60,5 +60,10 @@ namespace TrashFormsGUI
         {
 
         }
+
+        private void lblUsername_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

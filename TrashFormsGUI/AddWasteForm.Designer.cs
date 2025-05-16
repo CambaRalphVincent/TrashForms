@@ -45,7 +45,7 @@
             // 
             pictureBox1.BackColor = Color.Transparent;
             pictureBox1.Image = Properties.Resources.Sample_UI__1_2;
-            pictureBox1.Location = new Point(85, 38);
+            pictureBox1.Location = new Point(85, 54);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(624, 116);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -56,10 +56,11 @@
             // 
             lblItemName.AutoSize = true;
             lblItemName.BackColor = Color.Transparent;
-            lblItemName.Font = new Font("Montserrat", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblItemName.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblItemName.ForeColor = Color.FromArgb(0, 64, 0);
             lblItemName.Location = new Point(271, 187);
             lblItemName.Name = "lblItemName";
-            lblItemName.Size = new Size(127, 26);
+            lblItemName.Size = new Size(116, 24);
             lblItemName.TabIndex = 1;
             lblItemName.Text = "Item Name:";
             // 
@@ -67,10 +68,11 @@
             // 
             lblQuantity.AutoSize = true;
             lblQuantity.BackColor = Color.Transparent;
-            lblQuantity.Font = new Font("Montserrat", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblQuantity.Location = new Point(271, 222);
+            lblQuantity.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblQuantity.ForeColor = Color.FromArgb(0, 64, 0);
+            lblQuantity.Location = new Point(295, 222);
             lblQuantity.Name = "lblQuantity";
-            lblQuantity.Size = new Size(104, 26);
+            lblQuantity.Size = new Size(92, 24);
             lblQuantity.TabIndex = 2;
             lblQuantity.Text = "Quantity:";
             lblQuantity.Click += lblQuantity_Click;
@@ -79,46 +81,51 @@
             // 
             lblWasteType.AutoSize = true;
             lblWasteType.BackColor = Color.Transparent;
-            lblWasteType.Font = new Font("Montserrat", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblWasteType.Location = new Point(271, 255);
+            lblWasteType.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblWasteType.ForeColor = Color.FromArgb(0, 64, 0);
+            lblWasteType.Location = new Point(261, 257);
             lblWasteType.Name = "lblWasteType";
-            lblWasteType.Size = new Size(132, 26);
+            lblWasteType.Size = new Size(126, 24);
             lblWasteType.TabIndex = 3;
             lblWasteType.Text = "Waste Type:";
             // 
             // txtItemName
             // 
-            txtItemName.Font = new Font("Montserrat", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            txtItemName.Location = new Point(404, 186);
+            txtItemName.BackColor = Color.White;
+            txtItemName.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            txtItemName.Location = new Point(393, 186);
             txtItemName.Name = "txtItemName";
-            txtItemName.Size = new Size(120, 27);
+            txtItemName.Size = new Size(120, 26);
             txtItemName.TabIndex = 4;
             // 
             // numQuantity
             // 
-            numQuantity.Font = new Font("Montserrat", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            numQuantity.Location = new Point(404, 222);
+            numQuantity.BackColor = Color.White;
+            numQuantity.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            numQuantity.Location = new Point(393, 222);
             numQuantity.Margin = new Padding(3, 2, 3, 2);
             numQuantity.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
             numQuantity.Name = "numQuantity";
-            numQuantity.Size = new Size(120, 27);
+            numQuantity.Size = new Size(120, 26);
             numQuantity.TabIndex = 5;
             numQuantity.Value = new decimal(new int[] { 1, 0, 0, 0 });
             // 
             // cmbWasteType
             // 
+            cmbWasteType.BackColor = Color.White;
             cmbWasteType.DropDownStyle = ComboBoxStyle.DropDownList;
-            cmbWasteType.Font = new Font("Montserrat", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            cmbWasteType.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             cmbWasteType.FormattingEnabled = true;
-            cmbWasteType.Location = new Point(404, 257);
+            cmbWasteType.Location = new Point(393, 257);
             cmbWasteType.Name = "cmbWasteType";
-            cmbWasteType.Size = new Size(121, 30);
+            cmbWasteType.Size = new Size(121, 28);
             cmbWasteType.TabIndex = 6;
             // 
             // btnSubmit
             // 
-            btnSubmit.BackColor = Color.FromArgb(32, 93, 28);
-            btnSubmit.Font = new Font("Montserrat", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnSubmit.BackColor = Color.SeaGreen;
+            btnSubmit.FlatStyle = FlatStyle.Popup;
+            btnSubmit.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnSubmit.ForeColor = Color.White;
             btnSubmit.Location = new Point(344, 303);
             btnSubmit.Name = "btnSubmit";
@@ -130,8 +137,9 @@
             // 
             // btnCancel
             // 
-            btnCancel.BackColor = Color.FromArgb(32, 93, 28);
-            btnCancel.Font = new Font("Montserrat", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnCancel.BackColor = Color.SeaGreen;
+            btnCancel.FlatStyle = FlatStyle.Popup;
+            btnCancel.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnCancel.ForeColor = Color.White;
             btnCancel.Location = new Point(345, 345);
             btnCancel.Name = "btnCancel";

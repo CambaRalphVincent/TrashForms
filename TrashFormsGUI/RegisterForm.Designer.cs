@@ -55,10 +55,11 @@
             // 
             lblRegister.AutoSize = true;
             lblRegister.BackColor = Color.Transparent;
-            lblRegister.Font = new Font("Montserrat", 12F, FontStyle.Italic, GraphicsUnit.Point, 0);
-            lblRegister.Location = new Point(273, 150);
+            lblRegister.Font = new Font("Century Gothic", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            lblRegister.ForeColor = Color.FromArgb(0, 64, 0);
+            lblRegister.Location = new Point(224, 163);
             lblRegister.Name = "lblRegister";
-            lblRegister.Size = new Size(148, 22);
+            lblRegister.Size = new Size(142, 21);
             lblRegister.TabIndex = 1;
             lblRegister.Text = "Register Account";
             // 
@@ -66,10 +67,11 @@
             // 
             lblUsername.AutoSize = true;
             lblUsername.BackColor = Color.Transparent;
-            lblUsername.Font = new Font("Montserrat", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblUsername.Location = new Point(192, 188);
+            lblUsername.Font = new Font("Century Gothic", 12F, FontStyle.Bold);
+            lblUsername.ForeColor = Color.FromArgb(0, 64, 0);
+            lblUsername.Location = new Point(229, 189);
             lblUsername.Name = "lblUsername";
-            lblUsername.Size = new Size(100, 22);
+            lblUsername.Size = new Size(91, 19);
             lblUsername.TabIndex = 2;
             lblUsername.Text = "Username:";
             // 
@@ -77,10 +79,11 @@
             // 
             lblPassword.AutoSize = true;
             lblPassword.BackColor = Color.Transparent;
-            lblPassword.Font = new Font("Montserrat", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblPassword.Location = new Point(192, 221);
+            lblPassword.Font = new Font("Century Gothic", 12F, FontStyle.Bold);
+            lblPassword.ForeColor = Color.FromArgb(0, 64, 0);
+            lblPassword.Location = new Point(236, 223);
             lblPassword.Name = "lblPassword";
-            lblPassword.Size = new Size(95, 22);
+            lblPassword.Size = new Size(84, 19);
             lblPassword.TabIndex = 4;
             lblPassword.Text = "Password:";
             // 
@@ -88,17 +91,18 @@
             // 
             lblRole.AutoSize = true;
             lblRole.BackColor = Color.Transparent;
-            lblRole.Font = new Font("Montserrat", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblRole.Location = new Point(236, 255);
+            lblRole.Font = new Font("Century Gothic", 12F, FontStyle.Bold);
+            lblRole.ForeColor = Color.FromArgb(0, 64, 0);
+            lblRole.Location = new Point(274, 257);
             lblRole.Name = "lblRole";
-            lblRole.Size = new Size(51, 22);
+            lblRole.Size = new Size(46, 19);
             lblRole.TabIndex = 6;
             lblRole.Text = "Role:";
             // 
             // txtUsername
             // 
             txtUsername.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtUsername.Location = new Point(306, 185);
+            txtUsername.Location = new Point(321, 185);
             txtUsername.Margin = new Padding(3, 2, 3, 2);
             txtUsername.Name = "txtUsername";
             txtUsername.Size = new Size(219, 27);
@@ -107,7 +111,7 @@
             // txtPassword
             // 
             txtPassword.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtPassword.Location = new Point(306, 219);
+            txtPassword.Location = new Point(321, 219);
             txtPassword.Margin = new Padding(3, 2, 3, 2);
             txtPassword.Name = "txtPassword";
             txtPassword.PasswordChar = '*';
@@ -118,7 +122,7 @@
             // 
             comboBoxRole.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBoxRole.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            comboBoxRole.Location = new Point(306, 253);
+            comboBoxRole.Location = new Point(321, 253);
             comboBoxRole.Margin = new Padding(3, 2, 3, 2);
             comboBoxRole.Name = "comboBoxRole";
             comboBoxRole.Size = new Size(219, 29);
@@ -127,9 +131,10 @@
             // btnRegister
             // 
             btnRegister.BackColor = Color.FromArgb(32, 93, 28);
-            btnRegister.Font = new Font("Montserrat", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnRegister.FlatStyle = FlatStyle.Popup;
+            btnRegister.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold);
             btnRegister.ForeColor = Color.White;
-            btnRegister.Location = new Point(273, 292);
+            btnRegister.Location = new Point(259, 313);
             btnRegister.Name = "btnRegister";
             btnRegister.Size = new Size(105, 34);
             btnRegister.TabIndex = 8;
@@ -140,9 +145,10 @@
             // btnCancel
             // 
             btnCancel.BackColor = Color.FromArgb(32, 93, 28);
-            btnCancel.Font = new Font("Montserrat", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnCancel.FlatStyle = FlatStyle.Popup;
+            btnCancel.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold);
             btnCancel.ForeColor = Color.White;
-            btnCancel.Location = new Point(411, 292);
+            btnCancel.Location = new Point(395, 313);
             btnCancel.Name = "btnCancel";
             btnCancel.Size = new Size(105, 34);
             btnCancel.TabIndex = 9;

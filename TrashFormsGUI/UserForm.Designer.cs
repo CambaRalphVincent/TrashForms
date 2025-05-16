@@ -47,17 +47,19 @@
             // 
             lblUserMenu.AutoSize = true;
             lblUserMenu.BackColor = Color.Transparent;
-            lblUserMenu.Font = new Font("Montserrat", 12F, FontStyle.Italic, GraphicsUnit.Point, 0);
-            lblUserMenu.Location = new Point(273, 150);
+            lblUserMenu.Font = new Font("Century Gothic", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            lblUserMenu.ForeColor = Color.White;
+            lblUserMenu.Location = new Point(273, 165);
             lblUserMenu.Name = "lblUserMenu";
-            lblUserMenu.Size = new Size(98, 22);
+            lblUserMenu.Size = new Size(90, 21);
             lblUserMenu.TabIndex = 1;
             lblUserMenu.Text = "User Menu";
             // 
             // btnAddWaste
             // 
-            btnAddWaste.BackColor = Color.FromArgb(32, 93, 28);
-            btnAddWaste.Font = new Font("Montserrat", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnAddWaste.BackColor = Color.SeaGreen;
+            btnAddWaste.FlatStyle = FlatStyle.Popup;
+            btnAddWaste.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold);
             btnAddWaste.ForeColor = Color.White;
             btnAddWaste.Location = new Point(273, 188);
             btnAddWaste.Name = "btnAddWaste";
@@ -69,8 +71,9 @@
             // 
             // btnRecSummary
             // 
-            btnRecSummary.BackColor = Color.FromArgb(32, 93, 28);
-            btnRecSummary.Font = new Font("Montserrat", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnRecSummary.BackColor = Color.SeaGreen;
+            btnRecSummary.FlatStyle = FlatStyle.Popup;
+            btnRecSummary.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold);
             btnRecSummary.ForeColor = Color.White;
             btnRecSummary.Location = new Point(273, 229);
             btnRecSummary.Name = "btnRecSummary";
@@ -82,8 +85,9 @@
             // 
             // btnRecTips
             // 
-            btnRecTips.BackColor = Color.FromArgb(32, 93, 28);
-            btnRecTips.Font = new Font("Montserrat", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnRecTips.BackColor = Color.SeaGreen;
+            btnRecTips.FlatStyle = FlatStyle.Popup;
+            btnRecTips.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold);
             btnRecTips.ForeColor = Color.White;
             btnRecTips.Location = new Point(273, 270);
             btnRecTips.Name = "btnRecTips";
@@ -95,8 +99,9 @@
             // 
             // btnLogout
             // 
-            btnLogout.BackColor = Color.FromArgb(32, 93, 28);
-            btnLogout.Font = new Font("Montserrat", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnLogout.BackColor = Color.SeaGreen;
+            btnLogout.FlatStyle = FlatStyle.Popup;
+            btnLogout.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold);
             btnLogout.ForeColor = Color.White;
             btnLogout.Location = new Point(273, 311);
             btnLogout.Name = "btnLogout";

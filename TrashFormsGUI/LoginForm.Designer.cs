@@ -40,9 +40,10 @@
             // 
             pictureBox1.BackColor = Color.Transparent;
             pictureBox1.Image = Properties.Resources.Sample_UI__1_2;
-            pictureBox1.Location = new Point(83, 29);
+            pictureBox1.Location = new Point(95, 39);
+            pictureBox1.Margin = new Padding(3, 4, 3, 4);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(618, 109);
+            pictureBox1.Size = new Size(706, 145);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
@@ -51,10 +52,11 @@
             // 
             lblLogin.AutoSize = true;
             lblLogin.BackColor = Color.Transparent;
-            lblLogin.Font = new Font("Montserrat", 12F, FontStyle.Italic, GraphicsUnit.Point, 0);
-            lblLogin.Location = new Point(273, 150);
+            lblLogin.Font = new Font("Century Gothic", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            lblLogin.ForeColor = Color.Green;
+            lblLogin.Location = new Point(270, 227);
             lblLogin.Name = "lblLogin";
-            lblLogin.Size = new Size(96, 22);
+            lblLogin.Size = new Size(109, 23);
             lblLogin.TabIndex = 1;
             lblLogin.Text = "User Login";
             // 
@@ -62,51 +64,54 @@
             // 
             lblUsername.AutoSize = true;
             lblUsername.BackColor = Color.Transparent;
-            lblUsername.Font = new Font("Montserrat", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblUsername.Location = new Point(192, 188);
+            lblUsername.Font = new Font("Century Gothic", 12F, FontStyle.Bold);
+            lblUsername.ForeColor = Color.FromArgb(0, 64, 0);
+            lblUsername.Location = new Point(255, 267);
             lblUsername.Name = "lblUsername";
-            lblUsername.Size = new Size(100, 22);
+            lblUsername.Size = new Size(114, 23);
             lblUsername.TabIndex = 2;
             lblUsername.Text = "Username:";
+            lblUsername.Click += lblUsername_Click;
             // 
             // lblPassword
             // 
             lblPassword.AutoSize = true;
             lblPassword.BackColor = Color.Transparent;
-            lblPassword.Font = new Font("Montserrat", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblPassword.Location = new Point(197, 219);
+            lblPassword.Font = new Font("Century Gothic", 12F, FontStyle.Bold);
+            lblPassword.ForeColor = Color.FromArgb(0, 64, 0);
+            lblPassword.Location = new Point(263, 312);
             lblPassword.Name = "lblPassword";
-            lblPassword.Size = new Size(95, 22);
+            lblPassword.Size = new Size(106, 23);
             lblPassword.TabIndex = 4;
             lblPassword.Text = "Password:";
             // 
             // txtUsername
             // 
-            txtUsername.Font = new Font("Montserrat", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtUsername.Location = new Point(306, 185);
-            txtUsername.Margin = new Padding(3, 2, 3, 2);
+            txtUsername.Font = new Font("Century Gothic", 12F);
+            txtUsername.Location = new Point(375, 264);
             txtUsername.Name = "txtUsername";
-            txtUsername.Size = new Size(219, 27);
+            txtUsername.Size = new Size(250, 32);
             txtUsername.TabIndex = 3;
             // 
             // txtPassword
             // 
-            txtPassword.Font = new Font("Montserrat", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtPassword.Location = new Point(306, 219);
-            txtPassword.Margin = new Padding(3, 2, 3, 2);
+            txtPassword.Font = new Font("Century Gothic", 12F);
+            txtPassword.Location = new Point(375, 309);
             txtPassword.Name = "txtPassword";
             txtPassword.PasswordChar = '*';
-            txtPassword.Size = new Size(219, 27);
+            txtPassword.Size = new Size(250, 32);
             txtPassword.TabIndex = 5;
             // 
             // btnLogin
             // 
             btnLogin.BackColor = Color.FromArgb(32, 93, 28);
-            btnLogin.Font = new Font("Montserrat", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnLogin.FlatStyle = FlatStyle.Popup;
+            btnLogin.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold);
             btnLogin.ForeColor = Color.White;
-            btnLogin.Location = new Point(273, 262);
+            btnLogin.Location = new Point(309, 372);
+            btnLogin.Margin = new Padding(3, 4, 3, 4);
             btnLogin.Name = "btnLogin";
-            btnLogin.Size = new Size(105, 34);
+            btnLogin.Size = new Size(120, 45);
             btnLogin.TabIndex = 6;
             btnLogin.Text = "Login";
             btnLogin.UseVisualStyleBackColor = false;
@@ -115,11 +120,13 @@
             // btnCancel
             // 
             btnCancel.BackColor = Color.FromArgb(32, 93, 28);
-            btnCancel.Font = new Font("Montserrat", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnCancel.FlatStyle = FlatStyle.Popup;
+            btnCancel.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold);
             btnCancel.ForeColor = Color.White;
-            btnCancel.Location = new Point(411, 262);
+            btnCancel.Location = new Point(466, 372);
+            btnCancel.Margin = new Padding(3, 4, 3, 4);
             btnCancel.Name = "btnCancel";
-            btnCancel.Size = new Size(105, 34);
+            btnCancel.Size = new Size(120, 45);
             btnCancel.TabIndex = 7;
             btnCancel.Text = "Cancel";
             btnCancel.UseVisualStyleBackColor = false;
@@ -127,11 +134,11 @@
             // 
             // LoginForm
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.bg1;
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(800, 400);
+            ClientSize = new Size(914, 533);
             Controls.Add(pictureBox1);
             Controls.Add(lblLogin);
             Controls.Add(lblUsername);
@@ -141,7 +148,6 @@
             Controls.Add(btnLogin);
             Controls.Add(btnCancel);
             FormBorderStyle = FormBorderStyle.FixedDialog;
-            Margin = new Padding(3, 2, 3, 2);
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "LoginForm";

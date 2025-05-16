@@ -28,9 +28,11 @@ namespace TrashFormsGUI
             for (int i = 0; i < tips.Count; i++)
             {
                 sb.AppendLine($"{i + 1}. {tips[i]}");
+                sb.AppendLine(); // Add an extra blank line after each tip
             }
             return sb.ToString();
         }
+
 
         private void btnOk_Click(object sender, EventArgs e)
         {

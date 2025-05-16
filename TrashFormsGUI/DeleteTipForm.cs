@@ -19,6 +19,11 @@ namespace TrashFormsGUI
         {
             InitializeComponent();
             this.dbManager = dbManager;
+
+            cmbWasteType.SelectedIndexChanged += cmbWasteType_SelectedIndexChanged;
+            btnDelete.Click += btnDelete_Click;
+            btnCancel.Click += btnCancel_Click;
+            txtTipNumber.TextChanged += txtTipNumber_TextChanged;
         }
 
         private void DeleteTipForm_Load(object sender, EventArgs e)
@@ -28,7 +33,6 @@ namespace TrashFormsGUI
             txtTipNumber.Clear();
             txtSelectedTip.Clear();
             LoadTips();
-            cmbWasteType.SelectedIndexChanged += cmbWasteType_SelectedIndexChanged;
         }
 
         private void cmbWasteType_SelectedIndexChanged(object sender, EventArgs e)
@@ -38,35 +42,26 @@ namespace TrashFormsGUI
 
         private void LoadTips()
         {
-            lstTips.Items.Clear();
+            txtTips.Clear();
             txtSelectedTip.Clear();
+            txtTipNumber.Clear();
             string wasteType = cmbWasteType.SelectedItem?.ToString();
             if (string.IsNullOrEmpty(wasteType)) return;
 
             currentTips = dbManager.GetAllTipsByWasteType(wasteType) ?? new List<string>();
             if (currentTips.Count > 0)
             {
+                var sb = new StringBuilder();
                 for (int i = 0; i < currentTips.Count; i++)
                 {
-                    lstTips.Items.Add($"{i + 1}. {currentTips[i]}");
+                    sb.AppendLine($"{i + 1}. {currentTips[i]}");
+                    sb.AppendLine();
                 }
+                txtTips.Text = sb.ToString();
             }
             else
             {
-                lstTips.Items.Add("No tips found for this waste type.");
-            }
-        }
-
-        private void lstTips_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (lstTips.SelectedIndex >= 0 && currentTips.Count > lstTips.SelectedIndex)
-            {
-                txtTipNumber.Text = (lstTips.SelectedIndex + 1).ToString();
-                txtSelectedTip.Text = currentTips[lstTips.SelectedIndex];
-            }
-            else
-            {
-                txtSelectedTip.Clear();
+                txtTips.Text = "No tips found for this waste type.";
             }
         }
 
@@ -79,9 +74,9 @@ namespace TrashFormsGUI
                 return;
             }
 
-            if (!int.TryParse(txtTipNumber.Text.Trim(), out int tipNumber) || tipNumber <= 0)
+            if (!int.TryParse(txtTipNumber.Text.Trim(), out int tipNumber) || tipNumber <= 0 || tipNumber > currentTips.Count)
             {
-                MessageBox.Show("Please enter a valid tip number (positive integer).");
+                MessageBox.Show("Please enter a valid tip number.");
                 return;
             }
 
@@ -89,7 +84,7 @@ namespace TrashFormsGUI
             if (success)
             {
                 MessageBox.Show("Recycling tip deleted successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                this.Close();
+                LoadTips();
             }
             else
             {
@@ -100,6 +95,19 @@ namespace TrashFormsGUI
         private void btnCancel_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void txtTipNumber_TextChanged(object sender, EventArgs e)
+        {
+            if (int.TryParse(txtTipNumber.Text.Trim(), out int tipNumber) &&
+                tipNumber > 0 && tipNumber <= currentTips.Count)
+            {
+                txtSelectedTip.Text = currentTips[tipNumber - 1];
+            }
+            else
+            {
+                txtSelectedTip.Clear();
+            }
         }
     }
 }

@@ -42,10 +42,11 @@
             // lblTitle
             // 
             lblTitle.AutoSize = true;
-            lblTitle.Font = new Font("Montserrat", 12F, FontStyle.Italic, GraphicsUnit.Point, 0);
-            lblTitle.Location = new Point(175, 98);
+            lblTitle.Font = new Font("Century Gothic", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            lblTitle.ForeColor = Color.FromArgb(0, 64, 0);
+            lblTitle.Location = new Point(52, 106);
             lblTitle.Name = "lblTitle";
-            lblTitle.Size = new Size(117, 22);
+            lblTitle.Size = new Size(113, 21);
             lblTitle.TabIndex = 1;
             lblTitle.Text = "Recycling Tip";
             // 
@@ -65,7 +66,8 @@
             // btnOk
             // 
             btnOk.BackColor = Color.FromArgb(32, 93, 28);
-            btnOk.Font = new Font("Montserrat", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnOk.FlatStyle = FlatStyle.Popup;
+            btnOk.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnOk.ForeColor = Color.White;
             btnOk.Location = new Point(201, 218);
             btnOk.Margin = new Padding(3, 2, 3, 2);

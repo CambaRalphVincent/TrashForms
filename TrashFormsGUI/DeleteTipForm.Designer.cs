@@ -7,12 +7,14 @@
         private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.Label lblWasteType;
         private System.Windows.Forms.ComboBox cmbWasteType;
-        private System.Windows.Forms.ListBox lstTips;
+        private System.Windows.Forms.TextBox txtTips;
         private System.Windows.Forms.Label lblTipNumber;
         private System.Windows.Forms.TextBox txtTipNumber;
         private System.Windows.Forms.TextBox txtSelectedTip;
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.Label lblTips;
+        private System.Windows.Forms.Label lblSelectedTip;
 
         protected override void Dispose(bool disposing)
         {
@@ -23,139 +25,183 @@
 
         private void InitializeComponent()
         {
-            pictureBox1 = new PictureBox();
-            lblTitle = new Label();
-            lblWasteType = new Label();
-            cmbWasteType = new ComboBox();
-            lstTips = new ListBox();
-            lblTipNumber = new Label();
-            txtTipNumber = new TextBox();
-            txtSelectedTip = new TextBox();
-            btnDelete = new Button();
-            btnCancel = new Button();
+            pictureBox1 = new System.Windows.Forms.PictureBox();
+            lblTitle = new System.Windows.Forms.Label();
+            lblWasteType = new System.Windows.Forms.Label();
+            cmbWasteType = new System.Windows.Forms.ComboBox();
+            txtTips = new System.Windows.Forms.TextBox();
+            lblTipNumber = new System.Windows.Forms.Label();
+            txtTipNumber = new System.Windows.Forms.TextBox();
+            txtSelectedTip = new System.Windows.Forms.TextBox();
+            btnDelete = new System.Windows.Forms.Button();
+            btnCancel = new System.Windows.Forms.Button();
+            lblTips = new System.Windows.Forms.Label();
+            lblSelectedTip = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // pictureBox1
             // 
+            pictureBox1.BackColor = System.Drawing.Color.Transparent;
             pictureBox1.Image = Properties.Resources.Sample_UI__1_2;
-            pictureBox1.Location = new Point(95, 39);
+            pictureBox1.Location = new System.Drawing.Point(95, 39);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(706, 145);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.Size = new System.Drawing.Size(706, 145);
+            pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             // 
             // lblTitle
             // 
             lblTitle.AutoSize = true;
-            lblTitle.Font = new Font("Century Gothic", 12F, FontStyle.Italic, GraphicsUnit.Point, 0);
-            lblTitle.Location = new Point(312, 200);
+            lblTitle.BackColor = System.Drawing.Color.Transparent;
+            lblTitle.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, 0);
+            lblTitle.ForeColor = System.Drawing.Color.White;
+            lblTitle.Location = new System.Drawing.Point(115, 200);
             lblTitle.Name = "lblTitle";
-            lblTitle.Size = new Size(209, 23);
+            lblTitle.Size = new System.Drawing.Size(210, 23);
             lblTitle.TabIndex = 1;
             lblTitle.Text = "Delete Recycling Tip";
             // 
             // lblWasteType
             // 
             lblWasteType.AutoSize = true;
-            lblWasteType.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblWasteType.Location = new Point(95, 247);
+            lblWasteType.BackColor = System.Drawing.Color.Transparent;
+            lblWasteType.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
+            lblWasteType.ForeColor = System.Drawing.Color.FromArgb(0, 64, 0);
+            lblWasteType.Location = new System.Drawing.Point(30, 250);
             lblWasteType.Name = "lblWasteType";
-            lblWasteType.Size = new Size(126, 23);
+            lblWasteType.Size = new System.Drawing.Size(127, 23);
             lblWasteType.TabIndex = 2;
             lblWasteType.Text = "Waste Type:";
             // 
             // cmbWasteType
             // 
-            cmbWasteType.DropDownStyle = ComboBoxStyle.DropDownList;
-            cmbWasteType.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            cmbWasteType.Location = new Point(227, 247);
+            cmbWasteType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            cmbWasteType.Font = new System.Drawing.Font("Century Gothic", 12F);
+            cmbWasteType.Location = new System.Drawing.Point(163, 247);
             cmbWasteType.Name = "cmbWasteType";
-            cmbWasteType.Size = new Size(250, 31);
+            cmbWasteType.Size = new System.Drawing.Size(164, 31);
             cmbWasteType.TabIndex = 3;
             // 
-            // lstTips
+            // txtTips
             // 
-            lstTips.Font = new Font("Century Gothic", 11F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lstTips.ItemHeight = 21;
-            lstTips.Location = new Point(227, 284);
-            lstTips.Name = "lstTips";
-            lstTips.Size = new Size(250, 88);
-            lstTips.TabIndex = 4;
-            lstTips.SelectedIndexChanged += lstTips_SelectedIndexChanged;
+            txtTips.Font = new System.Drawing.Font("Century Gothic", 12F);
+            txtTips.Location = new System.Drawing.Point(163, 284);
+            txtTips.Name = "txtTips";
+            txtTips.Size = new System.Drawing.Size(245, 142);
+            txtTips.Multiline = true;
+            txtTips.ReadOnly = true;
+            txtTips.WordWrap = true;
+            txtTips.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            txtTips.TabIndex = 4;
             // 
             // lblTipNumber
             // 
             lblTipNumber.AutoSize = true;
-            lblTipNumber.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblTipNumber.Location = new Point(95, 397);
+            lblTipNumber.BackColor = System.Drawing.Color.Transparent;
+            lblTipNumber.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
+            lblTipNumber.ForeColor = System.Drawing.Color.FromArgb(0, 64, 0);
+            lblTipNumber.Location = new System.Drawing.Point(443, 247);
             lblTipNumber.Name = "lblTipNumber";
-            lblTipNumber.Size = new Size(125, 23);
+            lblTipNumber.Size = new System.Drawing.Size(126, 23);
             lblTipNumber.TabIndex = 5;
             lblTipNumber.Text = "Tip Number:";
             // 
             // txtTipNumber
             // 
-            txtTipNumber.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtTipNumber.Location = new Point(226, 397);
+            txtTipNumber.Font = new System.Drawing.Font("Century Gothic", 12F);
+            txtTipNumber.Location = new System.Drawing.Point(575, 241);
             txtTipNumber.Name = "txtTipNumber";
-            txtTipNumber.Size = new Size(250, 32);
+            txtTipNumber.Size = new System.Drawing.Size(55, 32);
             txtTipNumber.TabIndex = 6;
+            txtTipNumber.ReadOnly = false;
             // 
             // txtSelectedTip
             // 
-            txtSelectedTip.Font = new Font("Century Gothic", 11F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtSelectedTip.Location = new Point(227, 440);
+            txtSelectedTip.Font = new System.Drawing.Font("Century Gothic", 12F);
+            txtSelectedTip.Location = new System.Drawing.Point(575, 284);
             txtSelectedTip.Multiline = true;
             txtSelectedTip.Name = "txtSelectedTip";
             txtSelectedTip.ReadOnly = true;
-            txtSelectedTip.ScrollBars = ScrollBars.Vertical;
-            txtSelectedTip.Size = new Size(366, 60);
+            txtSelectedTip.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            txtSelectedTip.Size = new System.Drawing.Size(307, 144);
             txtSelectedTip.TabIndex = 7;
             // 
             // btnDelete
             // 
-            btnDelete.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold);
-            btnDelete.Location = new Point(620, 397);
+            btnDelete.BackColor = System.Drawing.Color.SeaGreen;
+            btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            btnDelete.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold);
+            btnDelete.ForeColor = System.Drawing.Color.White;
+            btnDelete.Location = new System.Drawing.Point(320, 460);
             btnDelete.Name = "btnDelete";
-            btnDelete.Size = new Size(120, 45);
+            btnDelete.Size = new System.Drawing.Size(120, 45);
             btnDelete.TabIndex = 8;
             btnDelete.Text = "Delete";
-            btnDelete.UseVisualStyleBackColor = true;
-            btnDelete.Click += btnDelete_Click;
+            btnDelete.UseVisualStyleBackColor = false;
             // 
             // btnCancel
             // 
-            btnCancel.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold);
-            btnCancel.Location = new Point(620, 455);
+            btnCancel.BackColor = System.Drawing.Color.SeaGreen;
+            btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            btnCancel.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold);
+            btnCancel.ForeColor = System.Drawing.Color.White;
+            btnCancel.Location = new System.Drawing.Point(471, 460);
             btnCancel.Name = "btnCancel";
-            btnCancel.Size = new Size(120, 45);
+            btnCancel.Size = new System.Drawing.Size(120, 45);
             btnCancel.TabIndex = 9;
             btnCancel.Text = "Cancel";
-            btnCancel.UseVisualStyleBackColor = true;
-            btnCancel.Click += btnCancel_Click;
+            btnCancel.UseVisualStyleBackColor = false;
+            // 
+            // lblTips
+            // 
+            lblTips.AutoSize = true;
+            lblTips.BackColor = System.Drawing.Color.Transparent;
+            lblTips.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
+            lblTips.ForeColor = System.Drawing.Color.FromArgb(0, 64, 0);
+            lblTips.Location = new System.Drawing.Point(106, 287);
+            lblTips.Name = "lblTips";
+            lblTips.Size = new System.Drawing.Size(51, 23);
+            lblTips.TabIndex = 10;
+            lblTips.Text = "Tips:";
+            // 
+            // lblSelectedTip
+            // 
+            lblSelectedTip.AutoSize = true;
+            lblSelectedTip.BackColor = System.Drawing.Color.Transparent;
+            lblSelectedTip.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
+            lblSelectedTip.ForeColor = System.Drawing.Color.FromArgb(0, 64, 0);
+            lblSelectedTip.Location = new System.Drawing.Point(435, 284);
+            lblSelectedTip.Name = "lblSelectedTip";
+            lblSelectedTip.Size = new System.Drawing.Size(134, 23);
+            lblSelectedTip.TabIndex = 11;
+            lblSelectedTip.Text = "Selected Tip:";
             // 
             // DeleteTipForm
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(914, 533);
+            AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            BackgroundImage = Properties.Resources.bg2;
+            BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            ClientSize = new System.Drawing.Size(914, 533);
+            Controls.Add(lblSelectedTip);
+            Controls.Add(lblTips);
             Controls.Add(pictureBox1);
             Controls.Add(lblTitle);
             Controls.Add(lblWasteType);
             Controls.Add(cmbWasteType);
-            Controls.Add(lstTips);
+            Controls.Add(txtTips);
             Controls.Add(lblTipNumber);
             Controls.Add(txtTipNumber);
             Controls.Add(txtSelectedTip);
             Controls.Add(btnDelete);
             Controls.Add(btnCancel);
-            FormBorderStyle = FormBorderStyle.FixedDialog;
+            FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "DeleteTipForm";
-            StartPosition = FormStartPosition.CenterParent;
+            StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             Text = "Delete Recycling Tip";
             Load += DeleteTipForm_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
@@ -163,4 +209,5 @@
             PerformLayout();
         }
     }
+
 }

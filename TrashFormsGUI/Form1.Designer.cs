@@ -45,7 +45,8 @@
             // btnRegister
             // 
             btnRegister.BackColor = Color.FromArgb(32, 93, 28);
-            btnRegister.Font = new Font("Montserrat", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnRegister.FlatStyle = FlatStyle.Popup;
+            btnRegister.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold);
             btnRegister.ForeColor = Color.White;
             btnRegister.Location = new Point(273, 203);
             btnRegister.Name = "btnRegister";
@@ -58,7 +59,8 @@
             // btnLogin
             // 
             btnLogin.BackColor = Color.FromArgb(32, 93, 28);
-            btnLogin.Font = new Font("Montserrat", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnLogin.FlatStyle = FlatStyle.Popup;
+            btnLogin.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold);
             btnLogin.ForeColor = Color.White;
             btnLogin.Location = new Point(273, 251);
             btnLogin.Name = "btnLogin";
@@ -72,7 +74,8 @@
             // 
             btnExit.BackColor = Color.FromArgb(32, 93, 28);
             btnExit.BackgroundImageLayout = ImageLayout.Stretch;
-            btnExit.Font = new Font("Montserrat", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnExit.FlatStyle = FlatStyle.Popup;
+            btnExit.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold);
             btnExit.ForeColor = Color.White;
             btnExit.Location = new Point(273, 300);
             btnExit.Name = "btnExit";
@@ -86,10 +89,11 @@
             // 
             lblMainMenu.AutoSize = true;
             lblMainMenu.BackColor = Color.Transparent;
-            lblMainMenu.Font = new Font("Montserrat", 12F, FontStyle.Italic, GraphicsUnit.Point, 0);
-            lblMainMenu.Location = new Point(273, 181);
+            lblMainMenu.Font = new Font("Century Gothic", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            lblMainMenu.ForeColor = Color.Green;
+            lblMainMenu.Location = new Point(273, 179);
             lblMainMenu.Name = "lblMainMenu";
-            lblMainMenu.Size = new Size(100, 22);
+            lblMainMenu.Size = new Size(97, 21);
             lblMainMenu.TabIndex = 4;
             lblMainMenu.Text = "Main Menu";
             // 
