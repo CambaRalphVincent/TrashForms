@@ -8,8 +8,7 @@
 -  [1. A brief project overview](#proj-overview)
 -  [2. Explanation of how OOP principles were applied](#explanation-oop)
 -  [3. Details of the chosen SDG and its integration into the project](#chosen-sdg)
--  [4. Instructions for running the program](#instruc-run)
--  [5. Contributor](#contrib)
+-  [4. Contributor](#contrib)
 
 ## <a id = "proj-overview"> 📖I. Project Overview</a> 
 <b>TrashForms</b> is a GUI-based smart recycling tracker using C# Windows Form aimed at promoting responsible recycling habits and sustainable waste management. The project supports two types of users:
