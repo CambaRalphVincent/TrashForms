@@ -12,7 +12,7 @@
 -  [5. Contributor](#contrib)
 
 ## <a id = "proj-overview"> 📖I. Project Overview</a> 
-<b>TrashFormed</b> is a GUI-based smart recycling tracker using C# Windows Form aimed at promoting responsible recycling habits and sustainable waste management. The project supports two types of users:
+<b>TrashForms</b> is a GUI-based smart recycling tracker using C# Windows Form aimed at promoting responsible recycling habits and sustainable waste management. The project supports two types of users:
 - <b>Regular Users</b>: They can register, log in, and track their recycling efforts by adding waste items categorized into types (plastic, organic, metal, glass, and electronic). Users can also view a summary of their recycling contributions and access helpful recycling tips to ensure proper disposal.
 - <b>Admins</b>: They have the ability to log in and manage recycling tips in the system, allowing them to add or delete tips tailored to each waste type.
 <br>
@@ -49,28 +49,6 @@ Chosen SDG: <b>Sustainable Development Goal 12: Responsible Consumption and Prod
 6. <b>Alignment with the SDG Goals</b>: By empowering users to manage and reduce waste, TrashFormed directly supports SDG 12.5: “Substantially reduce waste generation through prevention, reduction, recycling, and reuse.”
 <br>
 
-## <a id = "instruc-run"> ▶️IV. Instructions for running the program</a>
-1. <b>Set Up MySQL Database:</b>
-   - Start MySQL Server.
-   - Create a database named trashformed_db
-   - Execute the SQL script to set up the required tables (Users, RecyclingTips, WasteItems, etc.).
-2. <b>Prepare the Eclipse Project:</b>
-   - Open Eclipse IDE 2020.
-   - Import the project by navigating to File > Import > General > Existing Projects into Workspace.
-   - Select your project folder and click Finish.
-3. <b>Configure the Database Connection:</b>
-   - Open the DatabaseManager class in the project.
-   - Update the database URL, username, and password to match your MySQL credentials.
-4. <b>Configure the Database Connection:</b>
-   - Download the MySQL Connector JAR file
-   - Add it to your project's Build Path by right-clicking the project, selecting Build Path > Configure Build Path > Libraries > Add External JARs, and choosing the downloaded file.
-5. <b>Run the Program:</b>
-   - Locate the Main class in the generalPackage package.
-   - Right-click the Main class and choose Run As > Java Application.
-6. <b>Start Using TrashFormed:</b>
-   - Register a user or admin account.
-   - Log in to explore features like adding waste items, viewing summaries, or managing recycling tips.
-
 ---
 
 ##  <a id = "contrib"> 👷‍ Contributor </a> <br>
@@ -78,13 +56,17 @@ Chosen SDG: <b>Sustainable Development Goal 12: Responsible Consumption and Prod
 | Name | Role | E-mail | 
 | --- | --- | --- | 
 | Camba, Ralph Vincent A.| Developer | rvcamba12@gmail.com | 
+| Calog, Chester King S. | Developer | 23-09045@g.batstate-u.edu.ph |
+| Crisostomo, Erix Steven L. | Developer | 23-01893@g.batstate-u.edu.ph |
+| Guillermo, Gil Bryan O.| Developer | 23-09210@g.batstate-u.edu.ph |
+| Sta. Teresa, David Kalel D.| Developer | 23-00401@g.batstate-u.edu.ph |
 
 <br>
 
 - Courses:
-  - Courses: CS 211: Object Oriented Programming | IT 211: Database Management System
-- Course Facilitators:
-  - Ms. Fatima Marie P. Agdon | Mr. Owen Patrick Falculan
+  - Course: ES 101: Environmental Science
+- Course Facilitator:
+  - Dr. Aurelia Vivas
 
  
 
